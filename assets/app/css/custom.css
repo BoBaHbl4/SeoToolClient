@@ -123,8 +123,6 @@
 
 /* DataTables */
 
-/*
-.m_datatable--seognal-tickets table th:nth-child(3),
-.m_datatable--seognal-tickets table td:nth-child(3) {
-    width: 35%;
-}*/
+.m-datatable__table tr {
+    height: auto !important;
+}
