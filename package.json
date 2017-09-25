@@ -1,0 +1,20 @@
+{
+  "name": "seognal_frontend",
+  "description": "SEOgnals project",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject-partials": "^1.0.3",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "^1.2.2"
+  },
+  "dependencies": {
+    "bower": "^1.8.2",
+    "gulp-cli": "^1.4.0",
+    "less": "^2.7.2",
+    "npm-check-updates": "^2.12.1"
+  }
+}

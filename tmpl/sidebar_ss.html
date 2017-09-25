@@ -1,0 +1,251 @@
+<!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- BEGIN SIDEBAR -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-light " data-keep-expanded="false"
+                        data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                        <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                        <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                        <li class="sidebar-toggler-wrapper hide">
+                            <div class="sidebar-toggler">
+                                <span></span>
+                            </div>
+                        </li>
+                        <!-- END SIDEBAR TOGGLER BUTTON -->
+                        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                        <li class="nav-item start" data-nav-name="adminIndex">
+                            <a href="admin-index.html" class="nav-link">
+                                <i class="fa fa-user-secret"></i>
+                                <span class="title">Admin Area</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link nav-toggle">
+                                <i class="fa fa-shopping-bag"></i>
+                                <span class="title">Store</span>
+                                <span class="selected"></span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item" data-nav-name="ssOrders">
+                                    <a href="ss-orders.html" class="nav-link">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span class="title">Orders</span>
+
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssOrdersNew">
+                                    <a href="ss-orders-new.html" class="nav-link ">
+                                        <i class="fa fa-cart-plus"></i>
+                                        <span class="title">New Orders<small> / Moderation</small></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssReports">
+                                    <a href="ss-reports.html" class="nav-link ">
+                                        <i class="fa fa-list-alt"></i>
+                                        <span class="title">Reports</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssPDFList">
+                                    <a href="ss-pdf-list.html" class="nav-link ">
+                                        <i class="fa fa-file-pdf-o"></i>
+                                        <span class="title">Delete / View PDF</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssCounter">
+                                    <a href="ss-counter.html" class="nav-link ">
+                                        <i class="fa fa-database"></i>
+                                        <span class="title">Counter</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssTutorial">
+                                    <a href="ss-tutorial.html" class="nav-link">
+                                        <i class="fa fa-question-circle"></i>
+                                        <span class="title">Tutorial</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" data-nav-name="ssScreenGen">
+                            <a href="ss-screen-gen.html" class="nav-link">
+                                <i class="fa fa-image"></i>
+                                <span class="title">Social Signals ScreenGen</span>
+                                <span class="selected"></span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-toggle">
+                                        <i class="fa fa-facebook"></i>
+                                        <span class="title">Facebook</span>
+                                        <span class="selected"></span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item" data-nav-name="ssScreenGenFBLike">
+                                            <a href="ss-screen-gen-fb-like.html" class="nav-link">
+                                                <i class="fa fa-facebook"></i>
+                                                <span class="title">Like</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" data-nav-name="ssScreenGenFBShare">
+                                            <a href="ss-screen-gen-fb-share.html" class="nav-link">
+                                                <i class="fa fa-facebook"></i>
+                                                <span class="title">Share</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" data-nav-name="ssScreenGenFBSharePost">
+                                            <a href="ss-screen-gen-fb-share-post.html" class="nav-link">
+                                                <i class="fa fa-facebook"></i>
+                                                <span class="title">Share Post</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-toggle">
+                                        <i class="fa fa-twitter"></i>
+                                        <span class="title">Twitter</span>
+                                        <span class="selected"></span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item" data-nav-name="ssScreenGenTwitterTwitt">
+                                            <a href="ss-screen-gen-twitter-twitt.html" class="nav-link">
+                                                <i class="fa fa-twitter"></i>
+                                                <span class="title">Twitt</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" data-nav-name="ssScreenGenTwitterReTwitt">
+                                            <a href="ss-screen-gen-twitter-retwitt.html" class="nav-link">
+                                                <i class="fa fa-retweet"></i>
+                                                <span class="title">Retwitt</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-toggle">
+                                        <i class="fa fa-pinterest"></i>
+                                        <span class="title">Pinterest</span>
+                                        <span class="selected"></span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item" data-nav-name="ssScreenGenPinterestRepin">
+                                            <a href="ss-screen-gen-pinterest-repin.html" class="nav-link">
+                                                <i class="fa fa-pinterest"></i>
+                                                <span class="title">Repin</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" data-nav-name="ssScreenGenPinterestLike">
+                                            <a href="ss-screen-gen-pinterest-like.html" class="nav-link">
+                                                <i class="fa fa-pinterest"></i>
+                                                <span class="title">Like</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenDelicious">
+                                    <a href="ss-screen-gen-delicious.html" class="nav-link">
+                                        <i class="fa fa-delicious"></i>
+                                        <span class="title">Delicious</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenGooglePlus">
+                                    <a href="ss-screen-gen-google-plus.html" class="nav-link">
+                                        <i class="fa fa-google-plus"></i>
+                                        <span class="title">Google+</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenYoutube">
+                                    <a href="ss-screen-gen-youtube.html" class="nav-link">
+                                        <i class="fa fa-youtube"></i>
+                                        <span class="title">Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenStumbleupon">
+                                    <a href="ss-screen-gen-stumbleupon.html" class="nav-link">
+                                        <i class="fa fa-stumbleupon"></i>
+                                        <span class="title">Stumbleupon</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenDigg">
+                                    <a href="ss-screen-gen-digg.html" class="nav-link">
+                                        <i class="fa fa-digg"></i>
+                                        <span class="title">Digg</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenReddit">
+                                    <a href="ss-screen-gen-reddit.html" class="nav-link">
+                                        <i class="fa fa-reddit"></i>
+                                        <span class="title">Reddit</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenLinkedin">
+                                    <a href="ss-screen-gen-linkedin.html" class="nav-link">
+                                        <i class="fa fa-linkedin"></i>
+                                        <span class="title">Linkedin</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenFlickr">
+                                    <a href="ss-screen-gen-flickr.html" class="nav-link">
+                                        <i class="fa fa-flickr"></i>
+                                        <span class="title">Flickr</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenTumblr">
+                                    <a href="ss-screen-gen-tumblr.html" class="nav-link">
+                                        <i class="fa fa-tumblr"></i>
+                                        <span class="title">Tumblr</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenInstagram">
+                                    <a href="ss-screen-gen-instagram.html" class="nav-link">
+                                        <i class="fa fa-instagram"></i>
+                                        <span class="title">Instagram</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenSlidshare">
+                                    <a href="ss-screen-gen-slidshare.html" class="nav-link">
+                                        <i class="fa fa-slideshare"></i>
+                                        <span class="title">Slidshare</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenQuora">
+                                    <a href="ss-screen-gen-quora.html" class="nav-link">
+                                        <i class="fa fa-quora"></i>
+                                        <span class="title">Quora</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-nav-name="ssScreenGenAdditional">
+                                    <a href="ss-screen-gen-additional.html" class="nav-link">
+                                        <i class="fa fa-file-o"></i>
+                                        <span class="title">Additional</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" data-nav-name="ssPackageManager">
+                            <a href="ss-package-manager.html" class="nav-link">
+                                <i class="fa fa-cubes"></i>
+                                <span class="title">Package Manager</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                </div>
+                <!-- END SIDEBAR -->
+            </div>
+            <!-- END SIDEBAR -->

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*!
+    Custom CSS for SEOgnals Client Project
+ */
+
+.m-dropdown.m-dropdown--align-center.m-dropdown--large .m-dropdown__wrapper.m-dropdown__search {
+    width: 260px;
+    margin-left: -130px;
+}
+.m-aside-menu .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__link .m-menu__link-icon {
+    width: 27px;
+}
+.m-aside-menu .m-menu__nav>.m-menu__item>.m-menu__submenu>.m-menu__subnav>.m-menu__item>.m-menu__link {
+    padding-left: 65px;
+}
+.btn.m-btn--custom.m-btn--icon {
+    padding-left: 1.5rem;
+}
+.m-widget24 .m-widget24__item--seognals .m-widget24__title {
+    margin-left: 1.8rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+.m-widget24 .m-widget24__item--seognals .m-widget24__stats {
+    float: none;
+    display: block;
+    font-size: 2.75rem;
+    margin-left: 1.8rem;
+    margin-top: .1rem;
+}
+.m-widget24__icon {
+    display: block;
+    position: absolute;
+    font-size: 4.5rem;
+    top: 0;
+    right: 1rem;
+}
+.m-widget24 .m-widget24__item--seognals-order .m-widget24__title {
+    margin-left: 1.8rem;
+    margin-top: .8rem;
+    font-size: 1.5rem;
+    display: block;
+}
+.m-widget24 .m-widget24__item--seognals-order .m-widget24__desc {
+    text-align: right;
+}
+.m-widget24 .m-widget24__item--seognals-order .m-widget24__stats {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.m-widget24__button,
+.m-widget24 .m-widget24__item--seognals-order .m-widget24__desc {
+    text-align: right;
+    margin-right: 1.8rem;
+    display: block;
+}
+.m-widget24__button {
+    margin-bottom: 1.8rem;
+    clear: both;
+}
+.item-hidden {
+    display: none;
+}
+.table tbody.table-tbody-hidden {
+    border-top-width: 1px;
+}
+.m-form__group--seognals {
+    position: relative;
+}
+.m-form__help-dot {
+    position: absolute;
+    left: 0;
+    margin: -3rem 0 0 -1rem;
+}
+.m-portlet.m-portlet--order .m-portlet__head .m-portlet__head-caption .m-portlet__head-title .m-portlet__head-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.m-portlet.m-portlet--order .m-portlet__price {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+.m-portlet.m-portlet--order .m-portlet__body {
+    padding-top: .5rem;
+}
+.m-portlet.m-portlet--order .m-portlet__head-caption {
+    position: relative;
+}
+.m-portlet.m-portlet--order .m-portlet--order__head-icon {
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 0;
+    font-size: 1.8rem;
+}
+.card-img-content {
+    max-width: 30%;
+}
+.card-description {
+    max-width: 70%;
+}
+.card-body > .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.card-header[data-toggle] {
+    cursor: pointer;
+}
+.cards-accordion .card-header:not(.collapsed) {
+    color: #716aca;
+}
+.cards-accordion-icon__text {
+    padding: 0 0 0 3rem;
+}
+.cards-accordion-icon {
+    position: absolute;
+    left: 1.5rem;
+    top: -.2rem;
+    font-size: 1.4rem;
+
+}
+
+/* DataTables */
+
+/*
+.m_datatable--seognal-tickets table th:nth-child(3),
+.m_datatable--seognal-tickets table td:nth-child(3) {
+    width: 35%;
+}*/
