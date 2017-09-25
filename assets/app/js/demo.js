@@ -12,6 +12,9 @@ $(document).ready( function () {
         currentNavItem.addClass('m-menu__item--open');
         //$('.page-sidebar-menu li.active.open > a > .arrow').addClass('open');
     }
+    if (currentNavItem.closest('ul').hasClass('m-menu__subnav')) {
+        currentNavItem.closest('li.m-menu__item--submenu').addClass("m-menu__item--open");
+    }
 
     if (currentPageName.substr(0,2) === 'ss') {
         $('#contentNavBar li[data-section=ss]').addClass('m-menu__item--active');
@@ -38,13 +41,7 @@ $(document).ready( function () {
         return false;
     });
 
-    // iCheck check all table rows function
-    var tableCheckAllTrigger = jQuery('th.check-field input[data-name=icheck]');
-    tableCheckAllTrigger.on('ifChecked', function (event) {
-        $('td.check-field input[data-name=icheck]').iCheck('check');
-    });
-    tableCheckAllTrigger.on('ifUnchecked', function (event) {
-        $('td.check-field input[data-name=icheck]').iCheck('uncheck');
-    });
+    // Bootstrap Select Init
+    $('.m_selectpicker').selectpicker();
 
 });
