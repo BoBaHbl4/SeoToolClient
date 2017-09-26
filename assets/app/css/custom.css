@@ -126,3 +126,87 @@
 .m-datatable__table tr {
     height: auto !important;
 }
+.m-portlet-news .m-list-timeline__text .m-list-timeline__text--header  {
+    font-size: 1.8rem !important;
+    font-family: 'Roboto';
+}
+.m-portlet-news .m-list-timeline__text .m-list-timeline--description  {
+    font-size: 1rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.m-portlet-news .m-list-timeline__items .m-list-timeline__item .m-list-timeline__time {
+    vertical-align: top;
+}
+.m-portlet-news .m-list-timeline .m-list-timeline__items .m-list-timeline__item:first-child:before {
+    background-color: #ebedf2;
+}
+.m-portlet-news .m-list-timeline__items .m-list-timeline__item:first-child:before {
+    top: 3rem;
+}
+.m-portlet-news .m-list-timeline__items:before {
+    top: 1.6rem;
+}
+.m-portlet-news .m-list-timeline__items .m-list-timeline__item .m-list-timeline__badge:before {
+    top: .9em;
+    margin-top: 0;
+    left: -3px;
+    width: 12px;
+    height: 12px;
+}
+
+/***
+Charts and statistics
+***/
+.chart,
+.pie,
+.bars {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 14px; }
+
+.m-portlet__body--statbox {
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+    padding-top: 1rem !important;
+}
+.m-portlet__body--statbox .visual {
+    position: absolute;
+    left: -.5rem;
+    bottom: -2.5rem;
+}
+.m-portlet__body--statbox .visual i {
+    font-size: 5.5rem;
+}
+.m-portlet__body--statbox .number {
+    font-size: 2.6rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    display: block;
+}
+.m-portlet__body--statbox .desc {
+    font-size: 1.3rem;
+    display: block;
+}
+.list-group-no-border li {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+.m-portlet .m-portlet__head .m-portlet__head-tools.m-portlet__head-tools-search {
+    width: 300px;
+}
+.m-datatable.m-datatable--default>.m-datatable__table>.m-datatable__head .m-datatable__row>.m-datatable__cell.m-datatable__cell--right>span {
+    position: relative;
+}
+.m-datatable.m-datatable--default>.m-datatable__table>.m-datatable__head .m-datatable__row>.m-datatable__cell.m-datatable__cell--right>span>i {
+    right: auto;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+}
