@@ -3,6 +3,9 @@
     Custom CSS for SEOgnals Client Project
  */
 
+.m-widget24 .m-widget24__item .m-widget24__title {
+    padding-bottom: .5rem;
+}
 .m-dropdown.m-dropdown--align-center.m-dropdown--large .m-dropdown__wrapper.m-dropdown__search {
     width: 260px;
     margin-left: -130px;
@@ -377,4 +380,31 @@ Chats
 }
 .bootstrap-select.form-control.bootstrap-select-inline {
     width: auto;
+}
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.display-table-cell-tabs {
+    vertical-align: bottom;
+}
+.display-table-cell-tabs .nav-tabs {
+    margin-bottom: -1px;
+}
+
+[class*=m_datatable--seognal] .m-datatable__detail {
+    padding: .5rem 0 !important;
+    background: none !important;
+}
+[class*=m_datatable--seognal] .m-datatable__row.m-datatable__row--detail-expanded > td > span {
+    color: #716aca !important;
+    font-weight: bold;
+}
+[class*=m_datatable--seognal] .m-datatable__table,
+[class*=m_datatable--seognal] .m-datatable__body {
+    height: auto !important;
+}
+[class*=m_datatable--seognal] .m-datatable.m-datatable--default>.m-datatable__table>.m-datatable__body .m-datatable__row.m-datatable__row--even>.m-datatable__cell,
+[class*=m_datatable--seognal] .m-datatable.m-datatable--default>.m-datatable__table>.m-datatable__body .m-datatable__row.m-datatable__row--hover>.m-datatable__cell {
+    background-color: #fff;
 }

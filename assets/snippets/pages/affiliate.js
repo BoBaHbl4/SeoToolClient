@@ -154,7 +154,188 @@ var DatatableAffEvents = function () {
     // demo initializer
     var affEvents = function () {
 
-        var affEventsListData = JSON.parse('[{"_id":"795","action":"Activated","lead_id":"1248","date":"2016/10/30","selected_plan":"SEO Studio","revenue":"167","revenue_status":"1"},{"_id":"529","action":"Deactivated","lead_id":"6940","date":"2015/12/13","selected_plan":"Starter","revenue":"176","revenue_status":"2"},{"_id":"639","action":"Activated","lead_id":"8509","date":"2017/05/01","selected_plan":"SEO Studio","revenue":"69","revenue_status":"4"},{"_id":"870","action":"Deactivated","lead_id":"3006","date":"2014/05/05","selected_plan":"-","revenue":"191","revenue_status":"2"},{"_id":"1","action":"Trial","lead_id":"7031","date":"2015/08/13","selected_plan":"-","revenue":"28","revenue_status":"3"},{"_id":"499","action":"Trial","lead_id":"4105","date":"2015/05/24","selected_plan":"Starter","revenue":"164","revenue_status":"2"},{"_id":"493","action":"Rebil","lead_id":"6641","date":"2015/08/28","selected_plan":"-","revenue":"6","revenue_status":"2"},{"_id":"965","action":"Deactivated","lead_id":"3051","date":"2016/03/20","selected_plan":"Starter","revenue":"118","revenue_status":"4"},{"_id":"436","action":"Deactivated","lead_id":"7777","date":"2016/02/29","selected_plan":"Advanced","revenue":"71","revenue_status":"1"},{"_id":"727","action":"Deactivated","lead_id":"9167","date":"2014/03/02","selected_plan":"Advanced","revenue":"156","revenue_status":"3"},{"_id":"320","action":"Deactivated","lead_id":"4749","date":"2014/08/01","selected_plan":"Starter","revenue":"41","revenue_status":"3"},{"_id":"350","action":"Activated","lead_id":"3859","date":"2014/07/02","selected_plan":"Advanced","revenue":"122","revenue_status":"3"},{"_id":"16","action":"Activated","lead_id":"7596","date":"2015/06/24","selected_plan":"Starter","revenue":"174","revenue_status":"3"},{"_id":"103","action":"Rebil","lead_id":"1020","date":"2017/09/08","selected_plan":"SEO Studio","revenue":"88","revenue_status":"3"},{"_id":"215","action":"Deactivated","lead_id":"9954","date":"2015/08/20","selected_plan":"Starter","revenue":"160","revenue_status":"3"},{"_id":"91","action":"Deactivated","lead_id":"6616","date":"2015/08/23","selected_plan":"Starter","revenue":"142","revenue_status":"1"},{"_id":"524","action":"Trial","lead_id":"6892","date":"2017/01/12","selected_plan":"SEO Studio","revenue":"146","revenue_status":"3"},{"_id":"205","action":"Deactivated","lead_id":"4905","date":"2014/12/29","selected_plan":"Starter","revenue":"124","revenue_status":"4"},{"_id":"631","action":"Rebil","lead_id":"6044","date":"2016/02/04","selected_plan":"-","revenue":"38","revenue_status":"3"},{"_id":"241","action":"Activated","lead_id":"6946","date":"2015/08/13","selected_plan":"SEO Studio","revenue":"8","revenue_status":"4"}]');
+        var affEventsListData = [
+            {
+                "_id": "795",
+                "action": "Activated",
+                "lead_id": "1248",
+                "date": "2016/10/30",
+                "selected_plan": "SEO Studio",
+                "revenue": "167",
+                "revenue_status": "1"
+            },
+            {
+                "_id": "529",
+                "action": "Deactivated",
+                "lead_id": "6940",
+                "date": "2015/12/13",
+                "selected_plan": "Starter",
+                "revenue": "176",
+                "revenue_status": "2"
+            },
+            {
+                "_id": "639",
+                "action": "Activated",
+                "lead_id": "8509",
+                "date": "2017/05/01",
+                "selected_plan": "SEO Studio",
+                "revenue": "69",
+                "revenue_status": "4"
+            },
+            {
+                "_id": "870",
+                "action": "Deactivated",
+                "lead_id": "3006",
+                "date": "2014/05/05",
+                "selected_plan": "-",
+                "revenue": "191",
+                "revenue_status": "2"
+            },
+            {
+                "_id": "1",
+                "action": "Trial",
+                "lead_id": "7031",
+                "date": "2015/08/13",
+                "selected_plan": "-",
+                "revenue": "28",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "499",
+                "action": "Trial",
+                "lead_id": "4105",
+                "date": "2015/05/24",
+                "selected_plan": "Starter",
+                "revenue": "164",
+                "revenue_status": "2"
+            },
+            {
+                "_id": "493",
+                "action": "Rebil",
+                "lead_id": "6641",
+                "date": "2015/08/28",
+                "selected_plan": "-",
+                "revenue": "6",
+                "revenue_status": "2"
+            },
+            {
+                "_id": "965",
+                "action": "Deactivated",
+                "lead_id": "3051",
+                "date": "2016/03/20",
+                "selected_plan": "Starter",
+                "revenue": "118",
+                "revenue_status": "4"
+            },
+            {
+                "_id": "436",
+                "action": "Deactivated",
+                "lead_id": "7777",
+                "date": "2016/02/29",
+                "selected_plan": "Advanced",
+                "revenue": "71",
+                "revenue_status": "1"
+            },
+            {
+                "_id": "727",
+                "action": "Deactivated",
+                "lead_id": "9167",
+                "date": "2014/03/02",
+                "selected_plan": "Advanced",
+                "revenue": "156",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "320",
+                "action": "Deactivated",
+                "lead_id": "4749",
+                "date": "2014/08/01",
+                "selected_plan": "Starter",
+                "revenue": "41",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "350",
+                "action": "Activated",
+                "lead_id": "3859",
+                "date": "2014/07/02",
+                "selected_plan": "Advanced",
+                "revenue": "122",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "16",
+                "action": "Activated",
+                "lead_id": "7596",
+                "date": "2015/06/24",
+                "selected_plan": "Starter",
+                "revenue": "174",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "103",
+                "action": "Rebil",
+                "lead_id": "1020",
+                "date": "2017/09/08",
+                "selected_plan": "SEO Studio",
+                "revenue": "88",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "215",
+                "action": "Deactivated",
+                "lead_id": "9954",
+                "date": "2015/08/20",
+                "selected_plan": "Starter",
+                "revenue": "160",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "91",
+                "action": "Deactivated",
+                "lead_id": "6616",
+                "date": "2015/08/23",
+                "selected_plan": "Starter",
+                "revenue": "142",
+                "revenue_status": "1"
+            },
+            {
+                "_id": "524",
+                "action": "Trial",
+                "lead_id": "6892",
+                "date": "2017/01/12",
+                "selected_plan": "SEO Studio",
+                "revenue": "146",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "205",
+                "action": "Deactivated",
+                "lead_id": "4905",
+                "date": "2014/12/29",
+                "selected_plan": "Starter",
+                "revenue": "124",
+                "revenue_status": "4"
+            },
+            {
+                "_id": "631",
+                "action": "Rebil",
+                "lead_id": "6044",
+                "date": "2016/02/04",
+                "selected_plan": "-",
+                "revenue": "38",
+                "revenue_status": "3"
+            },
+            {
+                "_id": "241",
+                "action": "Activated",
+                "lead_id": "6946",
+                "date": "2015/08/13",
+                "selected_plan": "SEO Studio",
+                "revenue": "8",
+                "revenue_status": "4"
+            }
+        ];
 
         var datatableEvents = $('#m_datatable_affevents').mDatatable({
             // datasource definition
@@ -267,7 +448,108 @@ var DatatableAffPayHistory = function () {
     // demo initializer
     var affPayHistory = function () {
 
-        var affPayHistoryListData = JSON.parse('[{"payment_id":"0","date":"2017/06/23","amount":"$236"},{"payment_id":"1","date":"2014/08/23","amount":"$234"},{"payment_id":"2","date":"2015/08/13","amount":"$362"},{"payment_id":"3","date":"2016/03/30","amount":"$281"},{"payment_id":"4","date":"2016/11/09","amount":"$70"},{"payment_id":"5","date":"2014/11/23","amount":"$306"},{"payment_id":"6","date":"2017/07/25","amount":"$168"},{"payment_id":"7","date":"2017/02/12","amount":"$147"},{"payment_id":"8","date":"2015/08/30","amount":"$71"},{"payment_id":"9","date":"2014/09/07","amount":"$346"},{"payment_id":"10","date":"2014/08/28","amount":"$165"},{"payment_id":"11","date":"2016/11/04","amount":"$62"},{"payment_id":"12","date":"2014/09/22","amount":"$333"},{"payment_id":"13","date":"2014/12/01","amount":"$361"},{"payment_id":"14","date":"2014/05/12","amount":"$265"},{"payment_id":"15","date":"2016/11/25","amount":"$181"},{"payment_id":"16","date":"2014/08/02","amount":"$371"},{"payment_id":"17","date":"2014/08/21","amount":"$48"},{"payment_id":"18","date":"2015/09/01","amount":"$117"},{"payment_id":"19","date":"2016/07/17","amount":"$209"}]');
+        var affPayHistoryListData = [
+            {
+                "payment_id": "0",
+                "date": "2017/06/23",
+                "amount": "$236"
+            },
+            {
+                "payment_id": "1",
+                "date": "2014/08/23",
+                "amount": "$234"
+            },
+            {
+                "payment_id": "2",
+                "date": "2015/08/13",
+                "amount": "$362"
+            },
+            {
+                "payment_id": "3",
+                "date": "2016/03/30",
+                "amount": "$281"
+            },
+            {
+                "payment_id": "4",
+                "date": "2016/11/09",
+                "amount": "$70"
+            },
+            {
+                "payment_id": "5",
+                "date": "2014/11/23",
+                "amount": "$306"
+            },
+            {
+                "payment_id": "6",
+                "date": "2017/07/25",
+                "amount": "$168"
+            },
+            {
+                "payment_id": "7",
+                "date": "2017/02/12",
+                "amount": "$147"
+            },
+            {
+                "payment_id": "8",
+                "date": "2015/08/30",
+                "amount": "$71"
+            },
+            {
+                "payment_id": "9",
+                "date": "2014/09/07",
+                "amount": "$346"
+            },
+            {
+                "payment_id": "10",
+                "date": "2014/08/28",
+                "amount": "$165"
+            },
+            {
+                "payment_id": "11",
+                "date": "2016/11/04",
+                "amount": "$62"
+            },
+            {
+                "payment_id": "12",
+                "date": "2014/09/22",
+                "amount": "$333"
+            },
+            {
+                "payment_id": "13",
+                "date": "2014/12/01",
+                "amount": "$361"
+            },
+            {
+                "payment_id": "14",
+                "date": "2014/05/12",
+                "amount": "$265"
+            },
+            {
+                "payment_id": "15",
+                "date": "2016/11/25",
+                "amount": "$181"
+            },
+            {
+                "payment_id": "16",
+                "date": "2014/08/02",
+                "amount": "$371"
+            },
+            {
+                "payment_id": "17",
+                "date": "2014/08/21",
+                "amount": "$48"
+            },
+            {
+                "payment_id": "18",
+                "date": "2015/09/01",
+                "amount": "$117"
+            },
+            {
+                "payment_id": "19",
+                "date": "2016/07/17",
+                "amount": "$209"
+            }
+        ];
 
         var datatablePayHistory = $('#m_datatable_aff_pay_history').mDatatable({
             // datasource definition
@@ -342,7 +624,168 @@ var DatatableAffLeads = function () {
     // demo initializer
     var affLeads = function () {
 
-        var affLeadsListData = JSON.parse('[{"_id":"0","reg_date":"2014/01/20","sel_plan":"—","total_rebils":"15","on_hold":"53","total_revenue":"$3359"},{"_id":"1","reg_date":"2017/06/09","sel_plan":"SEO Studio","total_rebils":"4","on_hold":"68","total_revenue":"$5716"},{"_id":"2","reg_date":"2015/08/28","sel_plan":"—","total_rebils":"30","on_hold":"66","total_revenue":"$3162"},{"_id":"3","reg_date":"2016/03/03","sel_plan":"Advanced","total_rebils":"14","on_hold":"43","total_revenue":"$7593"},{"_id":"4","reg_date":"2016/02/12","sel_plan":"Advanced","total_rebils":"27","on_hold":"68","total_revenue":"$8663"},{"_id":"5","reg_date":"2017/03/20","sel_plan":"—","total_rebils":"20","on_hold":"4","total_revenue":"$1475"},{"_id":"6","reg_date":"2016/11/22","sel_plan":"SEO Studio","total_rebils":"11","on_hold":"80","total_revenue":"$395"},{"_id":"7","reg_date":"2017/08/28","sel_plan":"Advanced","total_rebils":"19","on_hold":"48","total_revenue":"$8417"},{"_id":"8","reg_date":"2015/01/11","sel_plan":"SEO Studio","total_rebils":"29","on_hold":"15","total_revenue":"$4947"},{"_id":"9","reg_date":"2015/07/09","sel_plan":"Starter","total_rebils":"16","on_hold":"21","total_revenue":"$7170"},{"_id":"10","reg_date":"2014/03/16","sel_plan":"Advanced","total_rebils":"11","on_hold":"30","total_revenue":"$4167"},{"_id":"11","reg_date":"2014/04/15","sel_plan":"Advanced","total_rebils":"16","on_hold":"18","total_revenue":"$6336"},{"_id":"12","reg_date":"2015/11/20","sel_plan":"Starter","total_rebils":"22","on_hold":"31","total_revenue":"$552"},{"_id":"13","reg_date":"2015/10/15","sel_plan":"Starter","total_rebils":"8","on_hold":"13","total_revenue":"$8936"},{"_id":"14","reg_date":"2015/08/16","sel_plan":"Starter","total_rebils":"18","on_hold":"72","total_revenue":"$3591"},{"_id":"15","reg_date":"2015/07/12","sel_plan":"SEO Studio","total_rebils":"28","on_hold":"0","total_revenue":"$5670"},{"_id":"16","reg_date":"2014/10/05","sel_plan":"Advanced","total_rebils":"27","on_hold":"69","total_revenue":"$5548"},{"_id":"17","reg_date":"2017/07/13","sel_plan":"—","total_rebils":"16","on_hold":"75","total_revenue":"$3088"},{"_id":"18","reg_date":"2017/05/31","sel_plan":"—","total_rebils":"18","on_hold":"71","total_revenue":"$2091"},{"_id":"19","reg_date":"2015/01/11","sel_plan":"SEO Studio","total_rebils":"30","on_hold":"12","total_revenue":"$8890"}]');
+        var affLeadsListData = [
+            {
+                "_id": "0",
+                "reg_date": "2014/01/20",
+                "sel_plan": "—",
+                "total_rebils": "15",
+                "on_hold": "53",
+                "total_revenue": "$3359"
+            },
+            {
+                "_id": "1",
+                "reg_date": "2017/06/09",
+                "sel_plan": "SEO Studio",
+                "total_rebils": "4",
+                "on_hold": "68",
+                "total_revenue": "$5716"
+            },
+            {
+                "_id": "2",
+                "reg_date": "2015/08/28",
+                "sel_plan": "—",
+                "total_rebils": "30",
+                "on_hold": "66",
+                "total_revenue": "$3162"
+            },
+            {
+                "_id": "3",
+                "reg_date": "2016/03/03",
+                "sel_plan": "Advanced",
+                "total_rebils": "14",
+                "on_hold": "43",
+                "total_revenue": "$7593"
+            },
+            {
+                "_id": "4",
+                "reg_date": "2016/02/12",
+                "sel_plan": "Advanced",
+                "total_rebils": "27",
+                "on_hold": "68",
+                "total_revenue": "$8663"
+            },
+            {
+                "_id": "5",
+                "reg_date": "2017/03/20",
+                "sel_plan": "—",
+                "total_rebils": "20",
+                "on_hold": "4",
+                "total_revenue": "$1475"
+            },
+            {
+                "_id": "6",
+                "reg_date": "2016/11/22",
+                "sel_plan": "SEO Studio",
+                "total_rebils": "11",
+                "on_hold": "80",
+                "total_revenue": "$395"
+            },
+            {
+                "_id": "7",
+                "reg_date": "2017/08/28",
+                "sel_plan": "Advanced",
+                "total_rebils": "19",
+                "on_hold": "48",
+                "total_revenue": "$8417"
+            },
+            {
+                "_id": "8",
+                "reg_date": "2015/01/11",
+                "sel_plan": "SEO Studio",
+                "total_rebils": "29",
+                "on_hold": "15",
+                "total_revenue": "$4947"
+            },
+            {
+                "_id": "9",
+                "reg_date": "2015/07/09",
+                "sel_plan": "Starter",
+                "total_rebils": "16",
+                "on_hold": "21",
+                "total_revenue": "$7170"
+            },
+            {
+                "_id": "10",
+                "reg_date": "2014/03/16",
+                "sel_plan": "Advanced",
+                "total_rebils": "11",
+                "on_hold": "30",
+                "total_revenue": "$4167"
+            },
+            {
+                "_id": "11",
+                "reg_date": "2014/04/15",
+                "sel_plan": "Advanced",
+                "total_rebils": "16",
+                "on_hold": "18",
+                "total_revenue": "$6336"
+            },
+            {
+                "_id": "12",
+                "reg_date": "2015/11/20",
+                "sel_plan": "Starter",
+                "total_rebils": "22",
+                "on_hold": "31",
+                "total_revenue": "$552"
+            },
+            {
+                "_id": "13",
+                "reg_date": "2015/10/15",
+                "sel_plan": "Starter",
+                "total_rebils": "8",
+                "on_hold": "13",
+                "total_revenue": "$8936"
+            },
+            {
+                "_id": "14",
+                "reg_date": "2015/08/16",
+                "sel_plan": "Starter",
+                "total_rebils": "18",
+                "on_hold": "72",
+                "total_revenue": "$3591"
+            },
+            {
+                "_id": "15",
+                "reg_date": "2015/07/12",
+                "sel_plan": "SEO Studio",
+                "total_rebils": "28",
+                "on_hold": "0",
+                "total_revenue": "$5670"
+            },
+            {
+                "_id": "16",
+                "reg_date": "2014/10/05",
+                "sel_plan": "Advanced",
+                "total_rebils": "27",
+                "on_hold": "69",
+                "total_revenue": "$5548"
+            },
+            {
+                "_id": "17",
+                "reg_date": "2017/07/13",
+                "sel_plan": "—",
+                "total_rebils": "16",
+                "on_hold": "75",
+                "total_revenue": "$3088"
+            },
+            {
+                "_id": "18",
+                "reg_date": "2017/05/31",
+                "sel_plan": "—",
+                "total_rebils": "18",
+                "on_hold": "71",
+                "total_revenue": "$2091"
+            },
+            {
+                "_id": "19",
+                "reg_date": "2015/01/11",
+                "sel_plan": "SEO Studio",
+                "total_rebils": "30",
+                "on_hold": "12",
+                "total_revenue": "$8890"
+            }
+        ];
 
         var datatableLeads = $('#m_datatable_aff_leads').mDatatable({
             // datasource definition
