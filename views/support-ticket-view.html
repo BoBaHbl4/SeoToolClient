@@ -480,74 +480,98 @@
                         <div class="m-portlet">
                             <!--begin::Ticket View-->
                             <div class="m-portlet__body">
-                                <div class="form-group m-form__group row">
-                                    <label class="col-form-label col-lg-3 col-sm-12" for="m_form_name">
-                                        Name
-                                    </label>
-                                    <div class="col-lg-9 col-md-9 col-sm-12">
-                                        <input type="text" class="form-control" id="m_form_name" value="John Doe" disabled>
+
+                                <div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <i class="fa fa-eye font-blue-madison"></i>
+                                            <span class="caption-subject bold uppercase font-blue-madison">View Ticket 1331</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="ticketStatus">Update status &nbsp;</label>
+                                                    <select class="form-control" id="ticketStatus">
+                                                        <option value="0">Opened</option>
+                                                        <option value="1">Answered</option>
+                                                        <option value="2">Closed</option>
+                                                    </select>
+                                                    <button type="button" class="btn green-steel">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body form">
+                                        <div class="note note-info">
+                                            <!-- BEGIN Tickets source examples -->
+                                            <span class="label bg-blue-hoki inline-block margin-bottom-10">Social Signals</span>
+                                            <!--<span class="label bg-yellow-haze inline-block margin-bottom-10">Content Writing</span>
+                                            <span class="label bg-red-haze inline-block margin-bottom-10">SocialJuice</span>-->
+                                            <!-- /END Tickets source examples -->
+                                            <h3 class="ticket-subject">I can't change the ticket subject by clicking on it.</h3>
+                                        </div>
+                                        <!-- BEGIN CHAT WINDOW -->
+                                        <ul class="chats">
+                                            <li class="in">
+                                                <i class="fa fa-user-circle avatar font-blue-steel"></i>
+                                                <div class="message border-left-blue-steel">
+                                                    <span class="arrow border-right-blue-steel"></span>
+                                                    <a href="mailto:lectus.pede@morbitristiquesenectus.net" class="name"> Lisa Wong </a>
+                                                    <span class="datetime"> <i class="fa fa-calendar"></i> 2017-03-03 19:11 </span>
+                                                    <span class="body text-left"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</span>
+                                                </div>
+                                            </li>
+                                            <li class="in">
+                                                <i class="fa fa-support avatar font-green-steel"></i>
+                                                <div class="message border-left-green-steel">
+                                                    <span class="arrow border-right-green-steel"> </span>
+                                                    <a href="mailto:Nulla.facilisis.Suspendisse@quispede.net" class="name">Bob Nilson</a>
+                                                    <span class="datetime"> <i class="fa fa-calendar"></i> 2017-03-03 20:11 </span>
+                                                    <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </li>
+                                            <li class="in">
+                                                <i class="fa fa-user-circle avatar font-blue-steel"></i>
+                                                <div class="message border-left-blue-steel">
+                                                    <span class="arrow border-right-blue-steel"></span>
+                                                    <a href="mailto:lectus.pede@morbitristiquesenectus.net" class="name"> Lisa Wong </a>
+                                                    <span class="datetime"> <i class="fa fa-calendar"></i> 2017-03-03 19:11 </span>
+                                                    <span class="body text-left"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</span>
+                                                </div>
+                                            </li>
+                                            <li class="in">
+                                                <i class="fa fa-support avatar font-green-steel"></i>
+                                                <div class="message border-left-green-steel">
+                                                    <span class="arrow border-right-green-steel"> </span>
+                                                    <a href="mailto:Nulla.facilisis.Suspendisse@quispede.net" class="name">Bob Nilson</a>
+                                                    <span class="datetime"> <i class="fa fa-calendar"></i> 2017-03-03 20:11 </span>
+                                                    <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- END CHAT WINDOW -->
+                                        <!-- BEGIN CHAT SEND FORM -->
+                                        <div class="chat-form">
+                                            <form action="#">
+                                                <div class="input-cont">
+                                                    <input class="form-control" type="text" placeholder="Type a message here...">
+                                                </div>
+                                                <div class="btn-cont" title="Send message">
+                                                    <span class="arrow border-right-green-steel"> </span>
+                                                    <a href="" class="btn green-steel icn-only">
+                                                        <i class="fa fa-send icon-white"></i>
+                                                    </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- END CHAT SEND FORM -->
                                     </div>
                                 </div>
-                                <div class="form-group m-form__group row">
-                                    <label class="col-form-label col-lg-3 col-sm-12" for="m_form_email">
-                                        Email Address
-                                    </label>
-                                    <div class="col-lg-9 col-md-9 col-sm-12">
-                                        <input type="email" class="form-control" id="m_form_email" value="username@wgnhs.uwex.edu" disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group m-form__group row">
-                                    <label class="col-form-label col-lg-3 col-sm-12" for="m_form_subj">
-                                        Subject
-                                    </label>
-                                    <div class="col-lg-9 col-md-9 col-sm-12">
-                                        <input type="text" class="form-control" id="m_form_subj" value="Some issue that needs to be resolved ASAP" disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group m-form__group row">
-                                    <label class="col-form-label col-lg-3 col-sm-12" for="m_form_message">
-                                        Message
-                                    </label>
-                                    <div class="col-lg-9 col-md-9 col-sm-12">
-                                        <textarea name="content" class="form-control" id="m_form_message" data-provide="markdown" rows="10" disabled>Please keep in mind, authors may be dealing with lots of requests at any given time and support times may vary. You can check if an author has set an indicated response time on the support tab of the item page.</textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group m-form__group row">
-                                    <label class="col-form-label col-lg-3 col-sm-12" for="m_form_department">
-                                        Department
-                                    </label>
-                                    <div class="col-lg-9 col-md-9 col-sm-12">
-                                        <select class="form-control m-bootstrap-select m_selectpicker" id="m_form_department" tabindex="-98" disabled>
-                                            <option value="0">
-                                                Main Support
-                                            </option>
-                                            <option value="1" selected>
-                                                After Sales Support
-                                            </option>
-                                            <option value="2">
-                                                Before Sales Support
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group m-form__group row">
-                                    <label class="col-form-label col-lg-3 col-sm-12" for="m_form_priority">
-                                        Priority
-                                    </label>
-                                    <div class="col-lg-9 col-md-9 col-sm-12">
-                                        <select class="form-control m-bootstrap-select m_selectpicker" id="m_form_priority" tabindex="-98" disabled>
-                                            <option value="0">
-                                                Low
-                                            </option>
-                                            <option value="1">
-                                                Medium
-                                            </option>
-                                            <option value="2" selected>
-                                                High
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
+
+
+
+
+
                                 <div class="form-group m-form__group row">
                                     <!-- http://www.dropzonejs.com/ -->
                                     <label class="col-form-label col-lg-3 col-sm-12" for="m_form_priority">
