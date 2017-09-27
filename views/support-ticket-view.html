@@ -472,130 +472,118 @@
                                     View Ticket
                                 </h3>
                             </div>
+                            <div class="">
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <label for="ticketStatus">Update status</label>
+                                        <select class="form-control m-bootstrap-select bootstrap-select-inline m_selectpicker m--margin-left-10" id="ticketStatus">
+                                            <option value="0">Opened</option>
+                                            <option value="1">Answered</option>
+                                            <option value="2">Closed</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group m--margin-left-10">
+                                        <button type="button" class="btn btn-success">Save</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <!-- END: Subheader -->
                     <div class="m-content">
-                        <!--begin::Portlet-->
+                        <!--begin::Ticket View-->
                         <div class="m-portlet">
-                            <!--begin::Ticket View-->
-                            <div class="m-portlet__body">
-
-                                <div class="portlet light">
-                                    <div class="portlet-title">
-                                        <div class="caption">
-                                            <i class="fa fa-eye font-blue-madison"></i>
-                                            <span class="caption-subject bold uppercase font-blue-madison">View Ticket 1331</span>
-                                        </div>
-                                        <div class="text-right">
-                                            <div class="form-inline">
-                                                <div class="form-group">
-                                                    <label for="ticketStatus">Update status &nbsp;</label>
-                                                    <select class="form-control" id="ticketStatus">
-                                                        <option value="0">Opened</option>
-                                                        <option value="1">Answered</option>
-                                                        <option value="2">Closed</option>
-                                                    </select>
-                                                    <button type="button" class="btn green-steel">Save</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="portlet-body form">
-                                        <div class="note note-info">
-                                            <!-- BEGIN Tickets source examples -->
-                                            <span class="label bg-blue-hoki inline-block margin-bottom-10">Social Signals</span>
-                                            <!--<span class="label bg-yellow-haze inline-block margin-bottom-10">Content Writing</span>
-                                            <span class="label bg-red-haze inline-block margin-bottom-10">SocialJuice</span>-->
-                                            <!-- /END Tickets source examples -->
-                                            <h3 class="ticket-subject">I can't change the ticket subject by clicking on it.</h3>
-                                        </div>
-                                        <!-- BEGIN CHAT WINDOW -->
-                                        <ul class="chats">
-                                            <li class="in">
-                                                <i class="fa fa-user-circle avatar font-blue-steel"></i>
-                                                <div class="message border-left-blue-steel">
-                                                    <span class="arrow border-right-blue-steel"></span>
-                                                    <a href="mailto:lectus.pede@morbitristiquesenectus.net" class="name"> Lisa Wong </a>
-                                                    <span class="datetime"> <i class="fa fa-calendar"></i> 2017-03-03 19:11 </span>
-                                                    <span class="body text-left"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</span>
-                                                </div>
-                                            </li>
-                                            <li class="in">
-                                                <i class="fa fa-support avatar font-green-steel"></i>
-                                                <div class="message border-left-green-steel">
-                                                    <span class="arrow border-right-green-steel"> </span>
-                                                    <a href="mailto:Nulla.facilisis.Suspendisse@quispede.net" class="name">Bob Nilson</a>
-                                                    <span class="datetime"> <i class="fa fa-calendar"></i> 2017-03-03 20:11 </span>
-                                                    <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                </div>
-                                            </li>
-                                            <li class="in">
-                                                <i class="fa fa-user-circle avatar font-blue-steel"></i>
-                                                <div class="message border-left-blue-steel">
-                                                    <span class="arrow border-right-blue-steel"></span>
-                                                    <a href="mailto:lectus.pede@morbitristiquesenectus.net" class="name"> Lisa Wong </a>
-                                                    <span class="datetime"> <i class="fa fa-calendar"></i> 2017-03-03 19:11 </span>
-                                                    <span class="body text-left"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</span>
-                                                </div>
-                                            </li>
-                                            <li class="in">
-                                                <i class="fa fa-support avatar font-green-steel"></i>
-                                                <div class="message border-left-green-steel">
-                                                    <span class="arrow border-right-green-steel"> </span>
-                                                    <a href="mailto:Nulla.facilisis.Suspendisse@quispede.net" class="name">Bob Nilson</a>
-                                                    <span class="datetime"> <i class="fa fa-calendar"></i> 2017-03-03 20:11 </span>
-                                                    <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- END CHAT WINDOW -->
-                                        <!-- BEGIN CHAT SEND FORM -->
-                                        <div class="chat-form">
-                                            <form action="#">
-                                                <div class="input-cont">
-                                                    <input class="form-control" type="text" placeholder="Type a message here...">
-                                                </div>
-                                                <div class="btn-cont" title="Send message">
-                                                    <span class="arrow border-right-green-steel"> </span>
-                                                    <a href="" class="btn green-steel icn-only">
-                                                        <i class="fa fa-send icon-white"></i>
-                                                    </a>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- END CHAT SEND FORM -->
+                            <div class="m-portlet__head">
+                                <div class="m-portlet__head-caption">
+                                    <div class="m-portlet__head-title">
+                                        <span class="m-portlet__head-icon">
+                                            <i class="flaticon-warning-2 m--font-danger"></i>
+                                        </span>
+                                        <h3 class="m-portlet__head-text">
+                                            I can't change the ticket subject by clicking on it.
+                                        </h3>
                                     </div>
                                 </div>
-
-
-
-
-
-                                <div class="form-group m-form__group row">
-                                    <!-- http://www.dropzonejs.com/ -->
-                                    <label class="col-form-label col-lg-3 col-sm-12" for="m_form_priority">
-                                        Uploaded Files
-                                    </label>
-                                    <div class="col-lg-9 col-md-9 col-sm-12">
-                                        <a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m--margin-right-5">
+                                <div class="m-portlet__head-tools">
+                                    <span class="m-badge m-badge--danger m-badge--wide m-badge--rounded">Social Signals</span>
+                                </div>
+                            </div>
+                            <div class="m-portlet__body">
+                                <!-- BEGIN CHAT WINDOW -->
+                                <ul class="chats">
+                                    <li class="out">
+                                        <i class="flaticon-file-1 avatar m--font-brand"></i>
+                                        <div class="message">
+                                            <a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m--margin-right-5">
                                             <span>
                                                 <i class="flaticon-download m--margin-right-5"></i>
                                                 <span>Screen1.jpg</span>
                                             </span>
-                                        </a>
-                                        <a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m--margin-right-5">
+                                            </a>
+                                            <a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m--margin-right-5">
                                             <span>
                                                 <i class="flaticon-download m--margin-right-5"></i>
                                                 <span>Screen2.png</span>
                                             </span>
-                                        </a>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="in">
+                                        <i class="flaticon-lifebuoy avatar m--font-success"></i>
+                                        <div class="message">
+                                            <span class="arrow"></span>
+                                            <a href="mailto:lectus.pede@morbitristiquesenectus.net" class="name m-link"> Lisa Wong </a>
+                                            <span class="datetime text-muted"> <i class="flaticon-event-calendar-symbol"></i> 2017-03-03 19:11 </span>
+                                            <span class="body text-left"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</span>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <i class="flaticon-user avatar m--font-brand"></i>
+                                        <div class="message">
+                                            <span class="arrow"> </span>
+                                            <a href="mailto:Nulla.facilisis.Suspendisse@quispede.net" class="name m-link">Bob Nilson</a>
+                                            <span class="datetime text-muted"> <i class="flaticon-event-calendar-symbol"></i> 2017-03-03 20:11 </span>
+                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="in">
+                                        <i class="flaticon-lifebuoy avatar m--font-success"></i>
+                                        <div class="message">
+                                            <span class="arrow"></span>
+                                            <a href="mailto:lectus.pede@morbitristiquesenectus.net" class="name m-link"> Lisa Wong </a>
+                                            <span class="datetime text-muted"> <i class="flaticon-event-calendar-symbol"></i> 2017-03-03 19:11 </span>
+                                            <span class="body text-left"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod .</span>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <i class="flaticon-user avatar m--font-brand"></i>
+                                        <div class="message">
+                                            <span class="arrow"></span>
+                                            <a href="mailto:Nulla.facilisis.Suspendisse@quispede.net" class="name m-link">Bob Nilson</a>
+                                            <span class="datetime text-muted"> <i class="flaticon-event-calendar-symbol"></i> 2017-03-03 20:11 </span>
+                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- END CHAT WINDOW -->
+                                <hr>
+                                <!-- BEGIN CHAT SEND FORM -->
+                                <form action="#">
+                                    <label for="messageInput">Type a message</label>
+                                    <textarea name="content" class="form-control md-input" id="messageInput" data-provide="markdown" rows="10" style="resize: none;"></textarea>
+                                    <div class="m--align-right m--margin-top-15">
+                                        <button class="btn btn-success m-btn--icon" type="button">
+                                            <span>
+                                                <i class="flaticon-paper-plane"></i>
+                                                <span>Send Message</span>
+                                            </span>
+                                        </button>
                                     </div>
-                                </div>
+                                </form>
+                                <!-- END CHAT SEND FORM -->
                             </div>
-                            <!--end::Ticket View-->
                         </div>
-                        <!--end::Portlet-->
+                        <!--end::Ticket View-->
                     </div>
                 </div>
             </div>

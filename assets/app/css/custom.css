@@ -223,6 +223,9 @@ Chats
     padding: 5px 0;
     margin: 10px auto;
     font-size: 12px; }
+.chats li:first-child {
+    margin-top: 0;
+}
 .chats li .body {
     display: block; }
 .chats li .avatar {
@@ -236,7 +239,9 @@ Chats
     margin-right: 10px; }
 .chats li.out .avatar {
     float: right;
-    margin-left: 10px; }
+    margin-left: 10px;
+    margin-top: -.2rem;
+}
 .chats li .name {
     color: #3590c1;
     font-size: 13px;
@@ -244,16 +249,22 @@ Chats
 .chats li .datetime {
     color: #333;
     font-size: 13px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-left: .7rem;}
 .chats li .message {
     display: block;
-    padding: 5px;
+    font-size: 1rem;
+    padding: .75rem 1.3rem;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    border-radius: .25rem;
     position: relative; }
 .chats li.in .message {
     text-align: left;
-    border-left: 2px solid #1BBC9B;
+    border-left: 2px solid #34bfa3;
     margin-left: 65px;
     background: #fafafa; }
+
 .chats li.in .message .arrow {
     display: block;
     position: absolute;
@@ -263,9 +274,9 @@ Chats
     height: 0;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
-    border-right: 8px solid #1BBC9B; }
+    border-right: 8px solid #34bfa3; }
 .chats li.out .message {
-    border-right: 2px solid #F3565D;
+    border-right: 2px solid #716aca;
     margin-right: 65px;
     background: #fafafa;
     text-align: right; }
@@ -276,7 +287,7 @@ Chats
     right: -8px;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
-    border-left: 8px solid #F3565D; }
+    border-left: 8px solid #716aca; }
 .chats li.out .name,
 .chats li.out .datetime {
     text-align: right; }
@@ -286,6 +297,7 @@ Chats
     padding: 10px;
     background-color: #e9eff3;
     overflow: hidden;
+    border-radius: .25rem;
     clear: both; }
 .chat-form .input-cont {
     margin-right: 40px; }
@@ -326,16 +338,12 @@ Chats
 .chats li.out .message {
     text-align: left;
 }
-.chats li .fa.avatar {
+.chats li .avatar {
     font-size: 32px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    margin: 18px 0 0 10px;
-}
-.chats li.in .message {
-    font-size: 16px;
-    padding: 5px 10px 10px 15px;
+    margin: .2rem 0 0 1rem;
 }
 .chat-form .btn-cont:hover .arrow {
     border-right-color: #29b4b6;
@@ -352,6 +360,9 @@ Chats
 .chats {
     margin-top: 0;
 }
+.chats li .datetime, .chats li .datetime i  {
+    font-size: 1rem !important;
+}
 .chat-form .btn-cont:active .btn,
 .chat-form .btn-cont:focus .btn {
     border-color: #196e6f;
@@ -363,4 +374,7 @@ Chats
 }
 .ticket-subject {
     margin: 0 0 0 0;
+}
+.bootstrap-select.form-control.bootstrap-select-inline {
+    width: auto;
 }
