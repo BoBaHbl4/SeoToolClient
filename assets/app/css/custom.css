@@ -412,3 +412,53 @@ Chats
     -moz-box-shadow: none !important;
     box-shadow: none !important;
 }
+.form-info-icon {
+    font-size: 1.6rem !important;
+    display: inline-block;
+    margin: 0 0 .2rem 0;
+    vertical-align: middle;
+}
+
+.m-tooltip.m-tooltip--skin-dark .tooltip-inner {
+    background: #716aca;
+}
+.m-tooltip.m-tooltip--skin-dark.bs-tooltip-top .arrow::before,
+.m-tooltip.m-tooltip--skin-dark.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before {
+    border-top-color: #716aca;
+}
+.m-tooltip.m-tooltip--skin-dark.bs-tooltip-top .arrow::before,
+.m-tooltip.m-tooltip--skin-dark.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before {
+    border-top-color:#716aca;
+}
+.m-tooltip.m-tooltip--skin-dark.bs-tooltip-right .arrow::before,
+.m-tooltip.m-tooltip--skin-dark.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before {
+    border-right-color:#716aca;
+}
+.m-tooltip.m-tooltip--skin-dark.bs-tooltip-bottom .arrow::before,
+.m-tooltip.m-tooltip--skin-dark.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before{
+    border-bottom-color:#716aca;
+}
+.m-tooltip.m-tooltip--skin-dark.bs-tooltip-left .arrow::before,
+.m-tooltip.m-tooltip--skin-dark.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before{
+    border-left-color:#716aca;
+}
+.form-control-icon {
+    display: inline-block;
+    vertical-align: top;
+}
+.form-control-icon.form-control-icon-left {
+    margin: 0 .2rem 0 -.5rem;
+}
+.dropzone {
+    min-height: 50px;
+}
+.dropzone .dz-message {
+    margin: 0 ;
+}
+.m-form__project--url {
+    position: relative;
+}
+.m-form__project--url_id {
+    font-size: 1.2rem;
+
+}
