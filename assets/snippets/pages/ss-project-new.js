@@ -52,10 +52,38 @@ jQuery(document).ready(function() {
     // Init date pickers
     ProjectNew.init();
 
+    var projectURLItemsIndex = function () {
+        $('.m-form__project--url').each(function (index, value) {
+            $(this).find('.m-form__project--url_id strong').html(index + 1)
+            console.log(index);
+            console.log(value);
+        })
+    };
+
+    var projectURLList = $('#m-form-project-url-list');
+
     // Remove Project URL Row
     var removeProjectURL = function (el) {
-        console.log(el);
-        el.closest('.m-form__project--url').remove();
+
+        console.log(el[0]);
+
+        // Delete row
+        el.closest('.m-form__project--url').slideUp(120, function(){ el.closest('.m-form__project--url').remove(); });
+
+        // Count index
+        setTimeout( function () {
+            projectURLItemsIndex();
+            // Check projectURLItemsIndex();
+            var projectURLListLength = projectURLList.find('.m-form__project--url').length;
+            if (projectURLListLength === 1) {
+                // Delete remove trigger
+                projectURLList.find('.m-form__project--url_btn_remove').remove();
+            }
+            if (projectURLListLength === 9) {
+                // Add ProjectURL New Trigger
+                $('#addNewProjectURLTrigger').css('visibility', 'visible');
+            }
+        }, 140);
     };
 
     var addNewProjectURL = function () {
@@ -106,7 +134,7 @@ jQuery(document).ready(function() {
             '                                                                <div class="col-xl-4">\n' +
             '                                                                    <div class="form-group">\n' +
             '                                                                        <div class="m-input-icon m-input-icon--left">\n' +
-            '                                                                            <input type="text" class="form-control m-input " placeholder="Signals" maxlength="3000">\n' +
+            '                                                                            <input type="number" class="form-control m-input " placeholder="Signals" max="3000">\n' +
             '                                                                            <span class="m-input-icon__icon m-input-icon__icon--left">\n' +
             '                                                                            <span>\n' +
             '                                                                                <i class="form-info-icon la la-info-circle m--font-brand"\n' +
@@ -142,14 +170,19 @@ jQuery(document).ready(function() {
             '                                                            <hr>\n' +
             '                                                        </div>';
 
-        var projectURLList = $('#m-form-project-url-list');
         // Get length of the project urls list
         var projectURLListLength = projectURLList.find('.m-form__project--url').length;
 
+        var deleteProjectURLTrigger = '<button type="button" class="btn btn-sm btn-danger m-btn--icon m--margin-left-30 m-form__project--url_btn_remove"><span><i class="la la-trash"></i><span>Remove</span></span></button>';
+
         if (projectURLListLength < 10) {
+
             console.log(projectURLListLength);
             if (projectURLListLength === 9) {
-                $('#addNewProjectURLTrigger').remove();
+                $('#addNewProjectURLTrigger').css('visibility', 'hidden');
+            }
+            if (projectURLListLength === 1) {
+                $(deleteProjectURLTrigger).appendTo(projectURLList.find('.m-form__project--url:first-child .m-form__project--url_id'));
             }
 
             // Add new project URL row
@@ -160,12 +193,13 @@ jQuery(document).ready(function() {
             // Bootstrap Select Init
             $('.m_selectpicker').selectpicker();
 
-            // Remove Project URL Trigger
-            $('.m-form__project--url_btn_remove').on('click', function () {
-                var removeProjectTrigger = $(this);
-                removeProjectURL(removeProjectTrigger);
-            })
         }
+
+        // Remove Project URL Trigger
+        $('.m-form__project--url_btn_remove').on('click', function () {
+            var removeProjectTrigger = $(this);
+            removeProjectURL(removeProjectTrigger);
+        })
 
     };
 
@@ -175,9 +209,9 @@ jQuery(document).ready(function() {
     });
 
     // Remove Project URL Trigger
-    $('.m-form__project--url_btn_remove').on('click', function () {
-        var removeProjectTrigger = $(this);
-        removeProjectURL(removeProjectTrigger);
-    })
+    // $('.m-form__project--url_btn_remove').on('click', function () {
+    //     var removeProjectTrigger = $(this);
+    //     removeProjectURL(removeProjectTrigger);
+    // })
 
 });
