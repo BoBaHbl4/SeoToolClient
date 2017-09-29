@@ -27,7 +27,7 @@
     <!-- end::Head -->
     <!-- BEGIN::Body -->
     <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"
-          data-nav-name="ssProjectNew">
+          data-nav-name="ssReports">
         <!-- BEGIN:: Page -->
         <div class="m-grid m-grid--hor m-grid--root m-page">
             <!-- BEGIN: Header -->
@@ -418,225 +418,421 @@
                         <div class="d-flex align-items-center">
                             <div class="mr-auto">
                                 <h3 class="m-subheader__title ">
-                                    New Project
+                                    Reports
                                 </h3>
                             </div>
                         </div>
                     </div>
                     <!-- END: Subheader -->
                     <div class="m-content">
+                        <!--Begin::Tutorials -->
                         <div class="row">
                             <div class="col-xl-12">
-                                <!--begin::Portlet-->
-                                <div class="m-portlet">
-                                    <!--begin::Form-->
-                                    <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed">
-                                        <div class="m-portlet__body">
-                                            <div class="form-group m-form__group row border-bottom-0">
-                                                <div class="col-lg-4">
-                                                    <label for="m_form_add_project1">
-                                                        Project Name
-                                                    </label>
-                                                    <i class="form-info-icon la la-info-circle m--font-brand"
-                                                       data-toggle="m-tooltip" title=""
-                                                       data-html="true"
-                                                       data-original-title="Some useful info <b>with</b> <code>HTML</code> code inside!"
-                                                       data-skin="dark"></i>
-                                                    <input type="text" class="form-control m-input" placeholder="Enter Project Name" id="m_form_add_project1">
-                                                    <!--<span class="m-form__help">
-                                                        Please enter your full name
-                                                    </span>-->
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <label for="m_form_add_project2">
-                                                        Start Date
-                                                    </label>
-                                                    <i class="form-info-icon la la-info-circle m--font-brand"
-                                                       data-toggle="m-tooltip" title=""
-                                                       data-html="true"
-                                                       data-original-title="Enter project start date"
-                                                       data-skin="dark"></i>
-                                                    <div class="m-input-icon m-input-icon--left">
-                                                        <input type="text" class="form-control m-input m_seognals_datesinglepicker" placeholder="Enter start date" id="m_form_add_project2">
-                                                        <span class="m-input-icon__icon m-input-icon__icon--left">
-                                                            <span>
-                                                                <i class="fa fa-calendar"></i>
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <label for="m_form_add_project3">
-                                                        Post Period
-                                                    </label>
-                                                    <i class="form-info-icon la la-info-circle m--font-brand"
-                                                       data-toggle="m-tooltip" title=""
-                                                       data-html="true"
-                                                       data-original-title="Enter project post period."
-                                                       data-skin="dark"></i>
-                                                    <div class="m-input-icon m-input-icon--left">
-                                                        <input type="text" class="form-control m-input m_seognals_daterangepicker" placeholder="Enter period" id="m_form_add_project3">
-                                                        <span class="m-input-icon__icon m-input-icon__icon--left">
-                                                            <span>
-                                                                <i class="fa fa-calendar"></i>
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                </div>
+                                <!--begin::Tutorials-->
+                                <div id="accordion" role="tablist" class="cards-accordion cards-accordion-project-reports">
+                                    <div class="card">
+                                        <div class="card-header collapsed" role="tab" id="heading1" data-toggle="collapse" href="#collapse1" aria-expanded="true">
+                                            <div class="pull-left card-header-project-reports-title">
+                                                <h5 class="mb-0">
+                                                    <i class="flaticon-grid-menu m--margin-right-10"></i> Magnum Test Project
+                                                </h5>
                                             </div>
-                                            <div class="form-group m-form__group row border-bottom-0">
-                                                <div class="col-lg-12">
-                                                    <!-- http://www.dropzonejs.com/ -->
-                                                    <label for="m_form_add_project4">
-                                                        Upload Files
-                                                    </label>
-                                                    <i class="form-info-icon la la-info-circle m--font-brand"
-                                                       data-toggle="m-tooltip" title=""
-                                                       data-html="true"
-                                                       data-original-title="Only .jpg/.gif/.png/.jpeg are allowed for upload"
-                                                       data-skin="dark"></i>
-                                                    <div class="m-dropzone dropzone m-dropzone--success" action="#" id="m_form_add_project4">
-                                                        <div class="m-dropzone__msg dz-message needsclick">
-                                                            <h3 class="m-dropzone__msg-title">
-                                                                Drop files here or click to upload.
-                                                            </h3>
-                                                            <span class="m-dropzone__msg-desc">
-                                                        Only .jpg/.gif/.png/.jpeg are allowed for upload
-                                                    </span>
+                                            <div class="pull-left card-header-project-reports-title-date">
+                                                <i class="fa fa-calendar"></i>&nbsp;2017/05/05
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="project-report-caret">
+                                                <i class="fa fa-angle-right"></i>
+                                                <i class="fa fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <table class="table table-reports-view">
+                                                                <thead>
+                                                                    <tr class="clickable collapsed" data-toggle="collapse" data-target=".collapsed1">
+                                                                        <th class="table-reports-view-it1">
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    http://magnum.crork.commagnum.crork.commagnum.crork.commagnum.crork.commagnum.crork.commagnum.crork.com
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th class="table-reports-view-it2">
+                                                                            2017/05/10
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="project-report-caret-table">
+                                                                                <div class="project-report-caret">
+                                                                                    <i class="fa fa-angle-right"></i>
+                                                                                    <i class="fa fa-angle-down"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="collapse collapsed collapsed1">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://magnum.crork.com/test-link/" class="m-link">http://magnum.crork.com/http://keenthemes.com/metronic/preview/default/html/components/base/tables.html/</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/08/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://magnum.crork.com/test-link/test-link/" class="m-link">http://magnum.crork.com/test-link/test-link/</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/09/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="table table-reports-view">
+                                                                <thead>
+                                                                    <tr class="clickable collapsed" data-toggle="collapse" data-target=".collapsed2">
+                                                                        <th class="table-reports-view-it1">
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    http://magnum.crork.com
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th class="table-reports-view-it2">
+                                                                            2016/08/10
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="project-report-caret-table">
+                                                                                <div class="project-report-caret">
+                                                                                    <i class="fa fa-angle-right"></i>
+                                                                                    <i class="fa fa-angle-down"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="collapse collapsed collapsed2">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://keenthemes.com/metronic/documentation.html" class="m-link">http://keenthemes.com/metronic/documentation.html</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/08/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://magnum.crork.com/test-link/test-link/" class="m-link">http://magnum.crork.com/test-link/test-link/</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/09/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://keenthemes.com/metronic/documentation.html" class="m-link">http://keenthemes.com/metronic/documentation.html</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/08/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://magnum.crork.com/test-link/test-link/" class="m-link">http://magnum.crork.com/test-link/test-link/</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/09/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group m-form__group row">
-                                                <div class="col-lg-12">
-                                                    <label for="m_form_add_project5">
-                                                        Project Details
-                                                    </label>
-                                                    <i class="form-info-icon la la-info-circle m--font-brand"
-                                                       data-toggle="m-tooltip" title=""
-                                                       data-html="true"
-                                                       data-original-title="Some useful info <b>with</b> <code>HTML</code> code inside!"
-                                                       data-skin="dark"></i>
-                                                    <textarea class="form-control m-input" placeholder="Enter project details" id="m_form_add_project5" data-provide="markdown" rows="10"></textarea>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header collapsed" role="tab" id="heading2" data-toggle="collapse" href="#collapse2" aria-expanded="true">
+                                            <div class="pull-left card-header-project-reports-title">
+                                                <h5 class="mb-0">
+                                                    <i class="flaticon-grid-menu m--margin-right-10"></i>Buzzworks Crossfire Technology
+                                                </h5>
                                             </div>
-                                            <div class="form-group m-form__group row">
-                                                <div class="col-lg-12">
-                                                    <h5 class="m-form__heading-sub m--margin-bottom-30">Project URLs <i class="form-info-icon la la-info-circle m--font-brand"
-                                                                                                    data-toggle="m-tooltip" title=""
-                                                                                                    data-html="true"
-                                                                                                    data-original-title="Up to 10"
-                                                                                                    data-skin="dark"></i></h5>
-
-                                                    <div id="m-form-project-url-list">
-                                                        <div class="m-form__project--url">
-                                                            <div class="m-form__project--url_id m--margin-bottom-10">
-                                                                <strong>1</strong>. Project URL
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-xl-12">
-                                                                    <div class="form-group">
-                                                                        <div class="m-input-icon m-input-icon--left">
-                                                                            <input type="text" class="form-control m-input " placeholder="Enter project URL">
-                                                                            <span class="m-input-icon__icon m-input-icon__icon--left">
-                                                                            <span>
-                                                                                <i class="form-info-icon la la-info-circle m--font-brand"
-                                                                                   data-toggle="m-tooltip" title=""
-                                                                                   data-html="true"
-                                                                                   data-original-title="Some useful info about project URLs"
-                                                                                   data-skin="dark"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-xl-4">
-                                                                    <div class="form-group">
-                                                                        <div class="m-input-icon m-input-icon--left">
-                                                                            <input type="text" class="form-control m-input " placeholder="Enter keywords">
-                                                                            <span class="m-input-icon__icon m-input-icon__icon--left">
-                                                                            <span>
-                                                                                <i class="form-info-icon la la-info-circle m--font-brand"
-                                                                                   data-toggle="m-tooltip" title=""
-                                                                                   data-html="true"
-                                                                                   data-original-title="Some useful info about project keywords"
-                                                                                   data-skin="dark"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xl-4">
-                                                                    <div class="form-group">
-                                                                        <div class="m-input-icon m-input-icon--left">
-                                                                            <input type="number" class="form-control m-input " placeholder="Signals" max="3000">
-                                                                            <span class="m-input-icon__icon m-input-icon__icon--left">
-                                                                            <span>
-                                                                                <i class="form-info-icon la la-info-circle m--font-brand"
-                                                                                   data-toggle="m-tooltip" title=""
-                                                                                   data-html="true"
-                                                                                   data-original-title="Maxlength 3000"
-                                                                                   data-skin="dark"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xl-4">
-                                                                    <div class="form-group">
-                                                                        <select class="form-control m-bootstrap-select m_selectpicker" tabindex="-98"
-                                                                                multiple
-                                                                                title="Choose social services"
-                                                                                data-selected-text-format="count > 3"
-                                                                                data-actions-box="true">
-                                                                            <option value="1">FB Like</option>
-                                                                            <option value="2">FB Share</option>
-                                                                            <option value="3">FB Share Post</option>
-                                                                            <option value="4">Twitter Tweet</option>
-                                                                            <option value="5">Twitter Retweet</option>
-                                                                            <option value="6">Google+ Share</option>
-                                                                            <option value="7">Pinterest Repin</option>
-                                                                            <option value="8">Pinterest Like</option>
-                                                                            <option value="9">Deoptioncious</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <hr>
+                                            <div class="pull-left card-header-project-reports-title-date">
+                                                <i class="fa fa-calendar"></i>&nbsp;2017/05/05
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="project-report-caret">
+                                                <i class="fa fa-angle-right"></i>
+                                                <i class="fa fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <table class="table table-reports-view">
+                                                                <thead>
+                                                                    <tr class="clickable collapsed" data-toggle="collapse" data-target=".collapsed3">
+                                                                        <th class="table-reports-view-it1">
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    http://liveslideshow.com/
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th class="table-reports-view-it2">
+                                                                            2017/05/10
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="project-report-caret-table">
+                                                                                <div class="project-report-caret">
+                                                                                    <i class="fa fa-angle-right"></i>
+                                                                                    <i class="fa fa-angle-down"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="collapse collapsed collapsed3">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://liveslideshow.com/" class="m-link">http://liveslideshow.com/test-link/</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/08/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://magnum.crork.com/test-link/test-link/" class="m-link">http://magnum.crork.com/test-link/test-link/</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/09/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table class="table table-reports-view">
+                                                                <thead>
+                                                                    <tr class="clickable collapsed" data-toggle="collapse" data-target=".collapsed4">
+                                                                        <th class="table-reports-view-it1">
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    http://magnum.crork.com
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th class="table-reports-view-it2">
+                                                                            2016/08/10
+                                                                        </th>
+                                                                        <th>
+                                                                            <div class="project-report-caret-table">
+                                                                                <div class="project-report-caret">
+                                                                                    <i class="fa fa-angle-right"></i>
+                                                                                    <i class="fa fa-angle-down"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody class="collapse collapsed collapsed4">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://keenthemes.com/metronic/documentation.html" class="m-link">http://keenthemes.com/metronic/documentation.html</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/08/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://magnum.crork.com/test-link/test-link/" class="m-link">http://magnum.crork.com/test-link/test-link/</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/09/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://keenthemes.com/metronic/documentation.html" class="m-link">http://keenthemes.com/metronic/documentation.html</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/08/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="text-ellipsis-container">
+                                                                                <div class="text-ellipsis">
+                                                                                    <a href="http://magnum.crork.com/test-link/test-link/" class="m-link">http://magnum.crork.com/test-link/test-link/</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            2017/09/30
+                                                                        </td>
+                                                                        <td class="text-center">
+                                                                            <a href="#" class="btn btn-sm btn-brand m-btn--icon">
+                                                                                <span>
+                                                                                    <i class="flaticon-download"></i>
+                                                                                    <span>Download report</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </div>
                                                     </div>
-
-                                                    <button type="button" class="btn btn-brand m-btn--icon" id="addNewProjectURLTrigger">
-                                                        <span>
-                                                            <i class="la la-link"></i>
-                                                            <span>Add New URL</span>
-                                                        </span>
-                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
-                                            <div class="m-form__actions">
-                                                <div class="row">
-                                                    <div class="col-lg-12 m--align-right">
-                                                        <button type="reset" class="btn btn-lg btn-secondary m--margin-right-10">
-                                                            Cancel
-                                                        </button>
-                                                        <button type="submit" class="btn btn-lg btn-success">
-                                                            Save
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <!--end::Form-->
+                                    </div>
                                 </div>
-                                <!--end::Portlet-->
+                                <!--end::Tutorials-->
                             </div>
                         </div>
+                        <!--End::Tutorials -->
                     </div>
                 </div>
             </div>
@@ -682,15 +878,6 @@
     <!-- partial -->
     <!-- end::Base Scripts -->
     <!-- BEGIN COMMON FUNCTIONS INIT SCRIPT -->
-    <script>
-        // file type validation
-        Dropzone.options.mDropzoneThree = {
-            paramName: "file", // The name that will be used to transfer the file
-            maxFiles: 5,
-            maxFilesize: 10, // MB
-            acceptedFiles: ".jpg,.gif,.png,.jpeg"
-        };
-        </script>
-    <script src="../assets/snippets/pages/ss-project-new.js" type="text/javascript"></script>
+
     <!-- END COMMON FUNCTIONS INIT SCRIPT -->
 </html>

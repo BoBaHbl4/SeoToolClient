@@ -461,3 +461,85 @@ Chats
 .m-form__project--url_id {
     font-size: 1.2rem;
 }
+.cards-accordion-project-reports .card-header {
+    position: relative;
+}
+.cards-accordion-project-reports .project-report-caret {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    margin-top: -.9rem;
+}
+.cards-accordion-project-reports .project-report-caret-table .project-report-caret {
+    right: 1.8rem;
+    margin-top: -.6rem;
+}
+.cards-accordion-project-reports .project-report-caret i {
+    font-size: 1.8rem;
+}
+.cards-accordion-project-reports .project-report-caret-table .project-report-caret i {
+    font-size: 1.4rem;
+}
+tr.clickable {
+    cursor: pointer;
+}
+.cards-accordion-project-reports .card-header:not(.collapsed) .fa-angle-right,
+.cards-accordion-project-reports .card-header.collapsed .fa-angle-down,
+.table-reports-view .clickable.collapsed .fa-angle-down,
+.table-reports-view .clickable .fa-angle-right {
+    display: none !important;
+}
+.cards-accordion-project-reports .card-header:not(.collapsed) .fa-angle-down,
+.cards-accordion-project-reports .card-header.collapsed .fa-angle-right,
+.table-reports-view .clickable.collapsed .fa-angle-right,
+.table-reports-view .clickable:not(.collapsed) .fa-angle-down {
+    display: block !important;
+}
+.cards-accordion-project-reports .card-body {
+    padding: 0;
+}
+.cards-accordion-project-reports .card-body .collapsing{
+    -webkit-transition: height .01s ease;
+    transition: height .01s ease;
+}
+.table.table-reports-view {
+    margin-bottom: 0;
+}
+.table.table-reports-view thead th {
+    background-color: #fbfbfb;
+}
+.table.table-reports-view thead th {
+    background-color: #fbfbfb;
+    border-bottom-width: 1px;
+    font-size: 1.1rem;
+}
+.table.table-reports-view tr > th:first-child,
+.table.table-reports-view tr > td:first-child {
+    padding-left: 1.25rem;
+}
+.table.table-reports-view .table-reports-view-it1,
+.card-header-project-reports-title {
+    width: 55%;
+}
+.table.table-reports-view .table-reports-view-it2,
+.card-header-project-reports-title-date {
+    width: 25%;
+    text-align: center;
+}
+.text-ellipsis-container {
+    position: relative;
+    min-height: 23px;
+}
+.text-ellipsis-container .text-ellipsis {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.project-report-caret-table {
+    position: relative;
+    margin:  -1rem -.75rem 0 0;
+}
