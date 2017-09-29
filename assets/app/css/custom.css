@@ -543,3 +543,6 @@ tr.clickable {
     position: relative;
     margin:  -1rem -.75rem 0 0;
 }
+.list-group-packages-head {
+    margin-top: .55rem;
+}
