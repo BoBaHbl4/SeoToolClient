@@ -60,7 +60,7 @@ $(document).ready( function () {
     var currentNavItem = $('#m_aside_left li[data-nav-name="' + currentPageName + '"]');
     var currentNavUserItem = $('#userAccountNav li[data-nav-name="' + currentPageName + '"]');
 
-    currentNavItem.addClass('m-menu__item--active');
+    currentNavItem.addClass('m-menu__item--active m-menu__item--open');
     currentNavUserItem.addClass('m-nav__item--active');
 
     if (currentNavItem.hasClass('m-menu__item--submenu')) {

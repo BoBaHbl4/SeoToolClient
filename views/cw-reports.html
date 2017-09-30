@@ -26,7 +26,7 @@
 <!-- end::Head -->
 <!-- BEGIN::Body -->
 <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"
-      data-nav-name="cwDashboard">
+      data-nav-name="cwReports">
     <!-- BEGIN:: Page -->
     <div class="m-grid m-grid--hor m-grid--root m-page">
         <!-- BEGIN: Header -->
@@ -471,106 +471,70 @@
                     <div class="d-flex align-items-center">
                         <div class="mr-auto">
                             <h3 class="m-subheader__title ">
-                                Welcome to SEOgnals
+                                Reports
                             </h3>
-                        </div>
-                        <div>
-                            <a href="cw-order-new.html" class="btn btn-success m-btn m-btn--custom m-btn--icon">
-                                <span>
-                                    <i class="fa flaticon-add"></i>
-                                    <span>
-                                        Place New Order
-                                    </span>
-                                </span>
-                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- END: Subheader -->
                 <div class="m-content">
-                    <!--Begin::Main Content-->
                     <div class="row">
                         <div class="col-xl-12">
-                            <!--begin:: Project Data-->
-                            <div class="m-portlet m-portlet--tabs">
+                            <!--Begin::Order View -->
+                            <div class="m-portlet">
                                 <div class="m-portlet__head">
                                     <div class="m-portlet__head-caption">
                                         <div class="m-portlet__head-title">
-                                                <span class="m-portlet__head-icon">
-                                                    <i class="flaticon-open-box m--font-brand"></i>
+                                                <span class="m-portlet__head-icon m--font-brand">
+                                                    <i class="flaticon-statistics"></i>
                                                 </span>
                                             <h3 class="m-portlet__head-text m--font-brand">
-                                                Your Orders
+                                                Reports List
                                             </h3>
                                         </div>
                                     </div>
-                                    <div class="m-portlet__head-tools">
-                                        <ul class="nav nav-tabs m-tabs m-tabs-line m-tabs-line--brand  m-tabs-line--right" role="tablist">
-                                            <li class="nav-item m-tabs__item">
-                                                <a class="nav-link m-tabs__link active" data-toggle="tab" href="#m_portlet_orders_active_tab" role="tab">
-                                                    <i class="flaticon-share"></i>
-                                                    Active
-                                                </a>
-                                            </li>
-                                            <li class="nav-item m-tabs__item">
-                                                <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_portlet_orders_completed_tab" role="tab">
-                                                    <i class="flaticon-interface"></i>
-                                                    Completed
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    <div class="m-portlet__head-tools m--font-success">
+                                        <!--begin: Search Form -->
+                                        <div class="m-input-icon m-input-icon--left">
+                                            <input type="text"
+                                                   class="form-control form-control-auto m-input"
+                                                   placeholder="Search..." id="m_form_cw_reports_search">
+                                            <span class="m-input-icon__icon m-input-icon__icon--left">
+                                                <span>
+                                                    <i class="la la-search"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <!--end: Search Form -->
                                     </div>
                                 </div>
                                 <div class="m-portlet__body">
-                                    <div class="tab-content">
-                                        <!--begin:SSProjectsList Tables-->
-                                        <div class="tab-pane active" id="m_portlet_orders_active_tab" role="tabpanel">
-                                            <div class="m-form m-form--label-align-right m--margin-bottom-20 pull-right">
-                                                <!--begin: Search Form -->
-                                                <div class="m-input-icon m-input-icon--left">
-                                                    <input type="text"
-                                                           class="form-control form-control-auto m-input"
-                                                           placeholder="Search..." id="m_form_cw_orders_active_search">
-                                                    <span class="m-input-icon__icon m-input-icon__icon--left">
-                                                        <span>
-                                                            <i class="la la-search"></i>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                                <!--end: Search Form -->
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="m_datatable_cw_orders_active"></div>
-                                        </div>
-                                        <div class="tab-pane" id="m_portlet_orders_completed_tab" role="tabpanel">
-                                            <div class="m-form m-form--label-align-right m--margin-bottom-20 pull-right">
-                                                <!--begin: Search Form -->
-                                                <div class="m-input-icon m-input-icon--left">
-                                                    <input type="text"
-                                                           class="form-control form-control-auto m-input"
-                                                           placeholder="Search..." id="m_form_cw_orders_complete_search">
-                                                    <span class="m-input-icon__icon m-input-icon__icon--left">
-                                                        <span>
-                                                            <i class="la la-search"></i>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                                <!--end: Search Form -->
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <div id="m_datatable_cw_orders_complete"></div>
-                                        </div>
-                                        <!--end:SSProjectsList Tables-->
-                                    </div>
-                                    <div class="m--align-right m--margin-top-25">
-                                        <a href="cw-reports.html" class="btn btn-brand">Check All Reports</a>
-                                    </div>
+                                    <div id="m_datatable_cw_reports"></div>
                                 </div>
                             </div>
-                            <!--end:: Project Data-->
+                            <!--End::Order View -->
                         </div>
                     </div>
-                    <!--End::Main Content-->
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="m-portlet m--bg-brand m-portlet--bordered-semi m-portlet--skin-dark" style="height: auto !important;">
+                                <div class="m-portlet__body">
+                                    <!--begin::Widget 7-->
+                                    <div class="m-widget7 m-widget-contact m-widget7--skin-dark">
+                                        <div class="m-widget7__desc">
+                                            Have a question?
+                                        </div>
+                                        <div class="m-widget7__button">
+                                            <a class="m-btn btn btn-light" href="#" role="button">
+                                                Contact Us!
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--end::Widget 7-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -616,6 +580,6 @@
 <!-- partial -->
 <!-- end::Base Scripts -->
 <!-- BEGIN COMMON FUNCTIONS INIT SCRIPT -->
-<script src="../assets/snippets/pages/cw-dashboard.js" type="text/javascript"></script>
+<script src="../assets/snippets/pages/cw-reports.js" type="text/javascript"></script>
 <!-- END COMMON FUNCTIONS INIT SCRIPT -->
 </html>
