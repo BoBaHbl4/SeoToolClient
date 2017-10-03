@@ -560,3 +560,31 @@ tr.clickable {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+.m-form-search {
+    min-width: 30%;
+}
+
+.btn-primary.active {
+    box-shadow: 0 0 0 3px rgba(88,103,221,.5)
+}
+.btn-secondary.active {
+    box-shadow: 0 0 0 3px rgba(235,237,242,.5)
+}
+.btn-warning.active {
+    box-shadow: 0 0 0 3px rgba(255,184,34,.5)
+}
+.btn-danger.active {
+    box-shadow: 0 0 0 3px rgba(244,81,108,.5)
+}
+.btn-success.active {
+    box-shadow: 0 0 0 3px rgba(52,191,163,.5)
+}
+.btn-brand.active {
+    box-shadow: 0 0 0 3px rgba(113,106,202,.5);
+}
+.btn-focus.active {
+    box-shadow: 0 0 0 3px rgba(152,22,244,.5)
+}
+.btn-info.active {
+    box-shadow: 0 0 0 3px rgba(54,163,247,.5)
+}

@@ -1,8 +1,8 @@
-var DatatableCWReports = function () {
+var DatatableSJReports = function () {
     //== Private functions
     
-    // cwReports initializer
-    var cwReports = function () {
+    // sjReports initializer
+    var sjReports = function () {
 
         var listData = [{
             "start_date": "2017/06/14",
@@ -146,7 +146,7 @@ var DatatableCWReports = function () {
             "action": "#"
         }];
 
-        var datatable = $('#m_datatable_cw_reports').mDatatable({
+        var datatable = $('#m_datatable_sj_reports').mDatatable({
             // datasource definition
             data: {
                 type: 'local',
@@ -157,7 +157,7 @@ var DatatableCWReports = function () {
             // layout definition
             layout: {
                 theme: 'default', // datatable theme
-                class: 'm_datatable--seognal-cw-reports', // custom wrapper class
+                class: 'm_datatable--seognal-sj-reports', // custom wrapper class
                 scroll: false, // enable/disable datatable scroll both horizontal and vertical when needed.
                 height: null, // datatable's body's fixed height
                 footer: false // display/hide footer
@@ -225,7 +225,7 @@ var DatatableCWReports = function () {
 
         var query = datatable.getDataSourceQuery();
 
-        $('#m_form_cw_reports_search').on('keyup', function (e) {
+        $('#m_form_sj_reports_search').on('keyup', function (e) {
             datatable.search($(this).val().toLowerCase());
         }).val(query.generalSearch);
 
@@ -235,12 +235,12 @@ var DatatableCWReports = function () {
         //== Public functions
         init: function () {
             // init orders
-            cwReports();
+            sjReports();
         }
     };
 }();
 
 
 $(document).ready(function () {
-    DatatableCWReports.init();
+    DatatableSJReports.init();
 });

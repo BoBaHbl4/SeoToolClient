@@ -90,7 +90,7 @@
                                 </li>
                                 <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"
                                     data-section="sj">
-                                    <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <a  href="sj-index.html" class="m-menu__link m-menu__toggle">
                                         <i class="m-menu__link-icon flaticon-network"></i>
                                         <span class="m-menu__link-title">
                                             <span class="m-menu__link-wrap">
@@ -125,7 +125,7 @@
                                             <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
                                             <div class="m-dropdown__inner ">
                                                 <div class="m-dropdown__header">
-                                                    <form  class="m-list-search__form">
+                                                    <form  class="m-list-search__form" action="search-result.html">
                                                         <div class="m-list-search__form-wrapper">
                                                             <span class="m-list-search__form-input-wrapper">
                                                                 <input id="m_quicksearch_input" autocomplete="off" type="text" name="q" class="m-list-search__form-input" value="" placeholder="Search...">
@@ -331,7 +331,7 @@
                                                             </li>
                                                             <li class="m-nav__separator m-nav__separator--fit"></li>
                                                             <li class="m-nav__item">
-                                                                <a href="../snippets/pages/user/login-1.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+                                                                <a href="login.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
                                                                     Logout
                                                                 </a>
                                                             </li>
@@ -467,9 +467,39 @@
                     <div class="m-subheader ">
                         <div class="d-flex align-items-center">
                             <div class="mr-auto">
-                                <h3 class="m-subheader__title ">
+                                <h3 class="m-subheader__title m--margin-bottom-20">
                                     Tutorials
                                 </h3>
+                                <div class="m--margin-bottom-10">
+                                    <h4>
+                                        <small class="text-muted">
+                                            Choose Category
+                                        </small>
+                                    </h4>
+                                </div>
+                                <ul class="nav nav-pills m--align-right m--margin-bottom-0" role="tablist">
+                                    <li class="nav-item ">
+                                        <a class="nav-link active" data-toggle="tab" href="#m_tabs_ss" role="tab" aria-expanded="false">
+                                            <i class="fa flaticon-web"></i> Social Signals
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_tabs_cw" role="tab" aria-expanded="false">
+                                            <i class="fa flaticon-edit-1"></i> Content Writing
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_tabs_sj" role="tab" aria-expanded="true">
+                                            <i class="fa flaticon-network"></i> SocialJuice
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link m-tabs__link" data-toggle="tab" href="#m_tabs_general" role="tab" aria-expanded="true">
+                                            <i class="fa flaticon-folder"></i> General
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -478,117 +508,360 @@
                         <!--Begin::Tutorials -->
                         <div class="row">
                             <div class="col-xl-12">
-                                <!--begin::Tutorials-->
-                                <div id="accordion" role="tablist" class="cards-accordion">
-                                    <div class="card">
-                                        <div class="card-header collapsed" role="tab" id="heading1" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">
-                                            <h5 class="mb-0">
-                                                What is SEOgnals?
-                                            </h5>
+
+                                <!--begin::FAQ-->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="m_tabs_ss" role="tabpanel" aria-expanded="true">
+                                        <div id="accordionSS" role="tablist" class="cards-accordion">
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading1" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                                                    <h5 class="mb-0">
+                                                        What is SEOgnals?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#accordionSS">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    SEOgnals helps brands, marketers, celebrities & creators (like you!) spread their message & appear massively popular online.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading2" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <h5 class="mb-0">
+                                                        How it works?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionSS">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-7">
+                                                                    <h6>Step 1</h6>
+                                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                                    dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                                                    sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                                                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                                                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                                                    sustainable VHS.
+                                                                </div>
+                                                                <div class="col-md-5">
+                                                                    <img src="../assets/app/media/img/products/product6.jpg" class="img-thumbnail img-fluid" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-md-7">
+                                                                    <h6>Step 2</h6>
+                                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                                    terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                                    dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                                                    sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch.
+                                                                </div>
+                                                                <div class="col-md-5">
+                                                                    <img src="../assets/app/media/img/products/product5.jpg" class="img-thumbnail img-fluid" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading3" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0">
+                                                        How to create a new projects in Social Signals?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionSS">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading4" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0">
+                                                        Loyalty Program?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordionSS">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading5" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0">
+                                                        How to choose copywriter for my Content Package?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionSS">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading6" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0">
+                                                        How do your Affiliate program works?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionSS">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            SEOgnals helps brands, marketers, celebrities & creators (like you!) spread their message & appear massively popular online.
+                                    </div>
+                                    <div class="tab-pane" id="m_tabs_cw" role="tabpanel" aria-expanded="false">
+                                        <div id="accordionCW" role="tablist" class="cards-accordion">
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading2_1" data-toggle="collapse" href="#collapse2_1" aria-expanded="true" aria-controls="collapseOne">
+                                                    <h5 class="mb-0">
+                                                        1. How can I change my shipping address?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse2_1" class="collapse" role="tabpanel" aria-labelledby="heading2_1" data-parent="#accordionCW">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="cards-accordion-icon">
+                                                                        <i class="flaticon-interface m--font-success"></i>
+                                                                    </div>
+                                                                    <div class="cards-accordion-icon__text">
+                                                                        By default, the last used shipping address will be saved
+                                                                        into your Sample Store account. When you are checking
+                                                                        out your order, the default shipping address will be
+                                                                        displayed and you have the option to amend it if you
+                                                                        need to.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading2_2" data-toggle="collapse" href="#collapse2_2" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <h5 class="mb-0">
+                                                        2. How do I activate my account?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse2_2" class="collapse" role="tabpanel" aria-labelledby="heading2_2" data-parent="#accordionCW">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="cards-accordion-icon">
+                                                                        <i class="flaticon-cancel m--font-danger"></i>
+                                                                    </div>
+                                                                    <div class="cards-accordion-icon__text">
+                                                                        The instructions to activate your account will be sent
+                                                                        to your email once you have submitted the registration
+                                                                        form. If you did not receive this email, your email
+                                                                        service provider’s mailing software may be blocking it.
+                                                                        You can try checking your junk / spam folder or contact
+                                                                        us at help@samplestore.com
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-header collapsed" role="tab" id="heading2" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
-                                            <h5 class="mb-0">
-                                                How it works?
-                                            </h5>
-                                        </div>
-                                        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-md-7">
-                                                            <h6>Step 1</h6>
-                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                                                            proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-                                                            sustainable VHS.
-                                                        </div>
-                                                        <div class="col-md-5">
-                                                            <img src="../assets/app/media/img/products/product6.jpg" class="img-thumbnail img-fluid" alt="">
+                                    <div class="tab-pane" id="m_tabs_sj" role="tabpanel" aria-expanded="false">
+                                        <div id="accordionSJ" role="tablist" class="cards-accordion">
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading3_1" data-toggle="collapse" href="#collapse3_1" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0">
+                                                        1. What do you mean by points? How do I earn it?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse3_1" class="collapse" role="tabpanel" aria-labelledby="heading3_1" data-parent="#accordionSJ">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="cards-accordion-icon">
+                                                                        <i class="flaticon-danger m--font-warning"></i>
+                                                                    </div>
+                                                                    <div class="cards-accordion-icon__text">
+                                                                        Because you are important to us, we want to know what
+                                                                        you think about the products. As an added value, every
+                                                                        time you rate the products you earn points which go
+                                                                        straight to your account. 1 point is added to your
+                                                                        account for every review that you give. You will need
+                                                                        those points in order to redeem the sample products. So
+                                                                        keep rating the products to keep earning points!
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <hr>
-                                                    <div class="row">
-                                                        <div class="col-md-7">
-                                                            <h6>Step 2</h6>
-                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                                            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch.
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading3_2" data-toggle="collapse" href="#collapse3_2" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0">
+                                                        2. Why is there a checkout limit? / What are all the checkout limits?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse3_2" class="collapse" role="tabpanel" aria-labelledby="heading3_2" data-parent="#accordionSJ">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="cards-accordion-icon">
+                                                                        <i class="flaticon-interface m--font-success"></i>
+                                                                    </div>
+                                                                    <div class="cards-accordion-icon__text">
+                                                                        Sample Store is a popular spot and gets lots of shoppers
+                                                                        at a time. These limits are in place to make sure
+                                                                        everyone has a good time trying and purchasing their
+                                                                        products. So...
+
+                                                                        - Each account is entitled to only one (1) order of up
+                                                                        to 4 different samples per day
+
+                                                                        - Each account is entitled to only one (1) redemption
+                                                                        per sample.
+
+                                                                        - Your account must have sufficient points before you
+                                                                        can checkout the sample products.
+
+                                                                        - Kindly clear all pending payments before another
+                                                                        checkout.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="col-md-5">
-                                                            <img src="../assets/app/media/img/products/product5.jpg" class="img-thumbnail img-fluid" alt="">
-                                                        </div>
+
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-header collapsed" role="tab" id="heading3" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapseThree">
-                                            <h5 class="mb-0">
-                                                How to create a new projects in Social Signals?
-                                            </h5>
-                                        </div>
-                                        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
-                                            <div class="card-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    <div class="tab-pane" id="m_tabs_general" role="tabpanel" aria-expanded="false">
+                                        <div id="accordionGENERAL" role="tablist" class="cards-accordion">
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading4_1" data-toggle="collapse" href="#collapse4_1" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <h5 class="mb-0">
+                                                        1. How do I activate my account?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse4_1" class="collapse" role="tabpanel" aria-labelledby="heading4_1" data-parent="#accordionGENERAL">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="cards-accordion-icon">
+                                                                        <i class="flaticon-cancel m--font-danger"></i>
+                                                                    </div>
+                                                                    <div class="cards-accordion-icon__text">
+                                                                        The instructions to activate your account will be sent
+                                                                        to your email once you have submitted the registration
+                                                                        form. If you did not receive this email, your email
+                                                                        service provider’s mailing software may be blocking it.
+                                                                        You can try checking your junk / spam folder or contact
+                                                                        us at help@samplestore.com
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header collapsed" role="tab" id="heading4" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapseThree">
-                                            <h5 class="mb-0">
-                                                Loyalty Program?
-                                            </h5>
-                                        </div>
-                                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
-                                            <div class="card-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading4_2" data-toggle="collapse" href="#collapse4_2" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0">
+                                                        2. What do you mean by points? How do I earn it?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse4_2" class="collapse" role="tabpanel" aria-labelledby="heading4_2" data-parent="#accordionGENERAL">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="cards-accordion-icon">
+                                                                        <i class="flaticon-danger m--font-warning"></i>
+                                                                    </div>
+                                                                    <div class="cards-accordion-icon__text">
+                                                                        Because you are important to us, we want to know what
+                                                                        you think about the products. As an added value, every
+                                                                        time you rate the products you earn points which go
+                                                                        straight to your account. 1 point is added to your
+                                                                        account for every review that you give. You will need
+                                                                        those points in order to redeem the sample products. So
+                                                                        keep rating the products to keep earning points!
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header collapsed" role="tab" id="heading5" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapseThree">
-                                            <h5 class="mb-0">
-                                                How to choose copywriter for my Content Package?
-                                            </h5>
-                                        </div>
-                                        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordion">
-                                            <div class="card-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header collapsed" role="tab" id="heading6" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapseThree">
-                                            <h5 class="mb-0">
-                                                How do your Affiliate program works?
-                                            </h5>
-                                        </div>
-                                        <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordion">
-                                            <div class="card-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            <div class="card">
+                                                <div class="card-header collapsed" role="tab" id="heading4_3" data-toggle="collapse" href="#collapse4_3" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0">
+                                                        3. Why is there a checkout limit? / What are all the checkout limits?
+                                                    </h5>
+                                                </div>
+                                                <div id="collapse4_3" class="collapse" role="tabpanel" aria-labelledby="heading4_3" data-parent="#accordionGENERAL">
+                                                    <div class="card-body">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="cards-accordion-icon">
+                                                                        <i class="flaticon-interface m--font-success"></i>
+                                                                    </div>
+                                                                    <div class="cards-accordion-icon__text">
+                                                                        Sample Store is a popular spot and gets lots of shoppers
+                                                                        at a time. These limits are in place to make sure
+                                                                        everyone has a good time trying and purchasing their
+                                                                        products. So...
+
+                                                                        - Each account is entitled to only one (1) order of up
+                                                                        to 4 different samples per day
+
+                                                                        - Each account is entitled to only one (1) redemption
+                                                                        per sample.
+
+                                                                        - Your account must have sufficient points before you
+                                                                        can checkout the sample products.
+
+                                                                        - Kindly clear all pending payments before another
+                                                                        checkout.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!--end::FAQ-->
+
+
+                                <!--begin::Tutorials-->
+
                                 <!--end::Tutorials-->
                             </div>
                         </div>

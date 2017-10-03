@@ -90,7 +90,7 @@
                                 </li>
                                 <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"
                                     data-section="sj">
-                                    <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <a  href="sj-index.html" class="m-menu__link m-menu__toggle">
                                         <i class="m-menu__link-icon flaticon-network"></i>
                                         <span class="m-menu__link-title">
                                             <span class="m-menu__link-wrap">
@@ -125,7 +125,7 @@
                                             <span class="m-dropdown__arrow m-dropdown__arrow--center"></span>
                                             <div class="m-dropdown__inner ">
                                                 <div class="m-dropdown__header">
-                                                    <form  class="m-list-search__form">
+                                                    <form  class="m-list-search__form" action="search-result.html">
                                                         <div class="m-list-search__form-wrapper">
                                                             <span class="m-list-search__form-input-wrapper">
                                                                 <input id="m_quicksearch_input" autocomplete="off" type="text" name="q" class="m-list-search__form-input" value="" placeholder="Search...">
@@ -331,7 +331,7 @@
                                                             </li>
                                                             <li class="m-nav__separator m-nav__separator--fit"></li>
                                                             <li class="m-nav__item">
-                                                                <a href="../snippets/pages/user/login-1.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+                                                                <a href="login.html" class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
                                                                     Logout
                                                                 </a>
                                                             </li>
@@ -358,11 +358,11 @@
             <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark ">
                 <!-- BEGIN: Aside Menu -->
                 <div
-                        id="m_ver_menu"
-                        class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark "
-                        data-menu-vertical="true"
-                        data-menu-scrollable="false"
-                        data-menu-dropdown-timeout="300"
+                    id="m_ver_menu"
+                    class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark "
+                    data-menu-vertical="true"
+                    data-menu-scrollable="false"
+                    data-menu-dropdown-timeout="300"
                 >
                     <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
                         <li class="m-menu__item" aria-haspopup="true" data-nav-name="cwDashboard">
@@ -511,7 +511,7 @@
                                         </div>
                                         <div class="form-group m-form__group row m-form__group--last">
                                             <label class="col-form-label col-lg-3 col-sm-12" for="m_form_cw_order_new4">
-                                                Message
+                                                Additional Details
                                             </label>
                                             <div class="col-lg-9 col-md-9 col-sm-12">
                                                 <textarea name="content" class="form-control" id="m_form_cw_order_new4" data-provide="markdown" rows="10"></textarea>
@@ -673,18 +673,39 @@
                                         </div>
                                         <div class="form-group m-form__group row m-form__group--last">
                                             <label class="col-form-label col-lg-3 col-sm-12" for="m_form_cw_order_new6">
+                                                Quality Option:
+                                            </label>
+                                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                                <select class="form-control m-bootstrap-select m_selectpicker show-tick" tabindex="-98" id="m_form_cw_order_new6">
+                                                    <option value="0">
+                                                        Elite (by our best writers, edited for top quality, unlimited free revisions for 30 days)
+                                                    </option>
+                                                    <option value="1">
+                                                        Premium (by senior writers, unlimited free revisions for 14 days)
+                                                    </option>
+                                                    <option value="2">
+                                                        Standard (by writers with years experience in the niche, 1 round of free revision)
+                                                    </option>
+                                                    <option value="3">
+                                                        Basic (by junior writers)
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group m-form__group row m-form__group--last">
+                                            <label class="col-form-label col-lg-3 col-sm-12" for="m_form_cw_order_new7">
                                                 Number of Articles:
                                             </label>
                                             <div class="col-lg-9 col-md-9 col-sm-12">
-                                                <input type="number" min="1" max="250" class="form-control" id="m_form_cw_order_new6" value="1">
+                                                <input type="number" min="1" max="250" class="form-control" id="m_form_cw_order_new7" value="1">
                                             </div>
                                         </div>
                                         <div class="form-group m-form__group row">
-                                            <label class="col-form-label col-lg-3 col-sm-12" for="m_form_cw_order_new7">
+                                            <label class="col-form-label col-lg-3 col-sm-12" for="m_form_cw_order_new8">
                                                 Number of Words Required:
                                             </label>
                                             <div class="col-lg-9 col-md-9 col-sm-12">
-                                                <input type="number" min="100" max="5000" class="form-control" id="m_form_cw_order_new7" value="100">
+                                                <input type="number" min="100" max="5000" class="form-control" id="m_form_cw_order_new8" value="100">
                                             </div>
                                         </div>
                                         <div class="form-group m-form__group row">
